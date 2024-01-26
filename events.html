@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="page-header fixed">
+        <div class="container">
+            <div class="page-header__row">
+                <div class="page-header__logo">
+                    <a href="index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="44"
+                            viewBox="0 0 40 44" fill="none">
+                            <path
+                                d="M15.0211 15.7776C10.4414 11.3216 13.596 3.55554 19.9859 3.55554C26.3757 3.55554 29.5304 11.3216 24.9506 15.7776L19.9859 20.6082L15.0211 15.7776Z"
+                                fill="#A7FC00" />
+                            <path
+                                d="M15.0499 31.3335C10.4702 35.7895 13.6249 43.5555 20.0147 43.5555C26.4045 43.5555 29.5592 35.7895 24.9795 31.3335L20.0147 26.5029L15.0499 31.3335Z"
+                                fill="#A7FC00" />
+                            <path
+                                d="M12.2221 28.5344C7.76607 33.1142 0 29.9595 0 23.5697C0 17.1798 7.76608 14.0251 12.2221 18.6049L17.0526 23.5697L12.2221 28.5344Z"
+                                fill="#A7FC00" />
+                            <path
+                                d="M27.7779 28.5056C32.2339 33.0854 40 29.9307 40 23.5408C40 17.151 32.2339 13.9963 27.7779 18.5761L22.9474 23.5408L27.7779 28.5056Z"
+                                fill="#A7FC00" />
+                        </svg>Smirnova Maria</a>
+                </div>
+                <div class="page-header__menu-wrapper">
+                    <nav class="page-header__nav">
+                        <ul class="page-header__menu">
+                            <li><a href="about_me.html">Обо мне</a></li>
+                            <li><a href="consultation.html">Консультация</a></li>
+                            <li><a href="course.html">Курс</a></li>
+                            <li><a href="recipes.html">Рецепты</a></li>
+                            <li><a href="events.html">Афиша</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- END Header -->
+    <main>
+        <!-- banner -->
+        <section class="page-section">
+            <div class="container">
+                <div class="banner-events">
+                    <img src="./images/events/banner-events1.jpg" alt="Афиша" width="300px" height="300px">
+                    <div class="banner-events__text">
+                        <h1 class="banner-events__heading">Афиша мероприятий</h1>
+                        <h3 class="banner-events__title">ВЫБИРАЙТЕ, ЧТО ИНТЕРЕСНО ВАМ, И РЕГИСТРИРУЙТЕСЬ</h3>
+                        <a href="#!" class="btn btn--primary">Смотреть афишу</a>
+                    </div>
+                    <img src="./images/events/banner-events2.jpg" alt="тарелка с едой" width="300px" height="300px">
+                </div>
+            </div>
+        </section>
+        <!-- END banner -->
+
+        <!-- process -->
+        <section class="page-section--bg">
+            <div class="container">
+                <div class="process">
+                    <div class="process__elem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="83" viewBox="0 0 84 83" fill="none">
+                            <path
+                                d="M42.0305 80.7261C63.7202 80.7261 81.3031 63.096 81.3031 41.3482C81.3031 19.6004 63.7202 1.97034 42.0305 1.97034C20.3408 1.97034 2.75781 19.6004 2.75781 41.3482C2.75781 63.096 20.3408 80.7261 42.0305 80.7261Z"
+                                fill="#333333" />
+                            <path
+                                d="M42.0308 82.6341C33.8796 82.6403 25.9097 80.2224 19.1292 75.6862C12.3487 71.1499 7.06223 64.6993 3.93861 57.1501C0.814995 49.601 -0.00547993 41.2925 1.58096 33.2757C3.16741 25.2589 7.0895 17.894 12.8511 12.1126C18.6127 6.33114 25.955 2.39297 33.9491 0.796209C41.9433 -0.800556 50.2302 0.0158184 57.7615 3.14209C65.2929 6.26836 71.7303 11.564 76.2595 18.3593C80.7888 25.1545 83.2063 33.144 83.2063 41.3171C83.198 52.2671 78.8583 62.7667 71.1391 70.5125C63.4199 78.2582 52.9516 82.6176 42.0308 82.6341ZM42.0308 3.84708C34.6274 3.84708 27.3903 6.04834 21.2346 10.1725C15.0789 14.2966 10.2811 20.1584 7.44796 27.0165C4.6148 33.8747 3.87352 41.4213 5.31785 48.7019C6.76218 55.9825 10.3273 62.6701 15.5622 67.9191C20.7972 73.1682 27.467 76.7428 34.7282 78.191C41.9893 79.6392 49.5157 78.8959 56.3555 76.0552C63.1954 73.2144 69.0415 68.4038 73.1546 62.2316C77.2677 56.0594 79.4631 48.8029 79.4631 41.3796C79.4631 36.4508 78.4949 31.5702 76.6137 27.0165C74.7326 22.4629 71.9753 18.3253 68.4994 14.8401C65.0235 11.3549 60.897 8.59026 56.3555 6.70407C51.814 4.81789 46.9465 3.84708 42.0308 3.84708Z"
+                                fill="white" />
+                            <path
+                                d="M49.7034 53.3838H34.9701M49.7034 53.3838V55.8393C49.7034 58.1276 49.7034 59.2718 49.3296 60.1743C48.8312 61.3776 47.8751 62.3337 46.6717 62.8321C45.7692 63.206 44.6251 63.206 42.3368 63.206V63.206C40.0485 63.206 38.9043 63.206 38.0018 62.8321C36.7985 62.3337 35.8424 61.3776 35.344 60.1743C34.9701 59.2718 34.9701 58.1276 34.9701 55.8393V53.3838M49.7034 53.3838V50.9103C49.7034 50.1237 49.9507 49.357 50.4104 48.7186L54.5859 42.9192C61.7746 32.9349 54.6397 19.006 42.3368 19.006V19.006C30.0338 19.006 22.8989 32.9349 30.0876 42.9192L34.2632 48.7186C34.7228 49.357 34.9701 50.1237 34.9701 50.9103V53.3838M38.6535 39.8782L42.3368 46.0171L46.0201 39.8782"
+                                stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Выбирайте, что интересно Вам, и регистрируйтесь.</p>
+                    </div>
+                    <div class="process__elem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
+                            <path
+                                d="M77.703 39.3779C77.703 60.2663 60.8186 77.1921 40 77.1921C19.1814 77.1921 2.29703 60.2663 2.29703 39.3779C2.29703 18.4895 19.1814 1.56363 40 1.56363C60.8186 1.56363 77.703 18.4895 77.703 39.3779Z"
+                                fill="#333333" stroke="#FBFBFB" stroke-width="3.12725" />
+                            <path
+                                d="M22.7334 39.1708C22.7334 34.769 22.7334 32.5681 23.4525 30.8319C24.4114 28.5171 26.2505 26.678 28.5653 25.7191C30.3015 25 32.5024 25 36.9042 25H42.5726C46.9744 25 49.1753 25 50.9115 25.7191C53.2263 26.678 55.0654 28.5171 56.0243 30.8319C56.7434 32.5681 56.7434 34.769 56.7434 39.1708V39.1708C56.7434 43.5727 56.7434 45.7736 56.0243 47.5097C55.0654 49.8246 53.2263 51.6637 50.9115 52.6225C49.1753 53.3417 46.9744 53.3417 42.5726 53.3417H36.9042C32.5024 53.3417 30.3015 53.3417 28.5653 52.6225C26.2505 51.6637 24.4114 49.8246 23.4525 47.5097C22.7334 45.7736 22.7334 43.5727 22.7334 39.1708V39.1708Z"
+                                stroke="#FBFBFB" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M22.7334 31.613L29.2989 36.7193C33.7384 40.1721 35.9582 41.8985 38.4938 42.2356C39.3204 42.3455 40.1579 42.3455 40.9845 42.2355C43.5201 41.8983 45.7397 40.1718 50.1791 36.7188L56.7434 31.613"
+                                stroke="#FBFBFB" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <p>Вам придёт ссылка для участия в мероприятии и будут приходить напоминания.</p>
+                    </div>
+                    <div class="process__elem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="83" viewBox="0 0 84 83" fill="none">
+                            <path
+                                d="M42.1514 79.7591C63.8377 79.7591 81.4179 62.129 81.4179 40.3812C81.4179 18.6334 63.8377 1.0033 42.1514 1.0033C20.465 1.0033 2.88477 18.6334 2.88477 40.3812C2.88477 62.129 20.465 79.7591 42.1514 79.7591Z"
+                                fill="#333333" />
+                            <path
+                                d="M42.7687 36.7247L36.1709 43.3225L33.2844 40.4359M50.1912 39.1989L43.5934 45.7966L41.944 44.1472M56.5748 40.8483C56.5748 49.047 49.9284 55.6933 41.7298 55.6933C33.5311 55.6933 26.8848 49.047 26.8848 40.8483C26.8848 32.6496 33.5311 26.0033 41.7298 26.0033C49.9284 26.0033 56.5748 32.6496 56.5748 40.8483Z"
+                                stroke="#FBFBFB" stroke-width="1.7936" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M42.0001 82.6342C33.8515 82.6342 25.8858 80.2109 19.1105 75.671C12.3351 71.131 7.0544 64.6781 3.93604 57.1284C0.81769 49.5787 0.00174111 41.2712 1.59146 33.2565C3.18119 25.2418 7.10514 17.8798 12.8671 12.1015C18.6291 6.32322 25.9702 2.38814 33.9623 0.793915C41.9544 -0.800313 50.2384 0.0179005 57.7668 3.14509C65.2951 6.27228 71.7297 11.568 76.2569 18.3626C80.784 25.1571 83.2004 33.1454 83.2004 41.3171C83.1839 52.27 78.8379 62.7695 71.1149 70.5144C63.392 78.2593 52.9221 82.6176 42.0001 82.6342ZM42.0001 3.8471C34.5979 3.8471 27.3618 6.04836 21.2071 10.1725C15.0523 14.2966 10.2553 20.1584 7.4226 27.0166C4.58988 33.8747 3.84873 41.4213 5.29284 48.7019C6.73695 55.9825 10.3014 62.6701 15.5356 67.9192C20.7698 73.1682 27.4385 76.7428 34.6985 78.191C41.9586 79.6392 49.4838 78.8959 56.3226 76.0552C63.1614 73.2144 69.0066 68.4038 73.1191 62.2316C77.2315 56.0594 79.4266 48.8029 79.4266 41.3796C79.4266 36.4508 78.4585 31.5702 76.5776 27.0166C74.6968 22.4629 71.94 18.3253 68.4646 14.8401C64.9893 11.3549 60.8634 8.59028 56.3226 6.70409C51.7818 4.81791 46.915 3.8471 42.0001 3.8471Z"
+                                fill="white" />
+                        </svg>
+                        <p>Занесите мероприятие в свой календарь, чтобы не забыть.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END process -->
+
+        <!-- calendar -->
+        <section class="page-section">
+            <div class="container">
+                <div class="calendar">
+                    <div class="calendar__item">
+                        <div class="calendar-date">
+                            <span class="calendar-date__day">3</span>
+                            <span class="calendar-date__month">февраля</span>
+                        </div>
+                        <div class="calendar-poster">
+                            <img src="./images/events/event1.jpg" alt="посуда">
+                        </div>
+                        <div class="calendar__event">
+                            <h1 class="calendar__heading">Гайд: Безопасная посуда</h1>
+                            <h3 class="calendar__title">БЕСПЛАТНЫЙ ГАЙД</h3>
+                            <p class="calendar__description">Гайд о том, как выбрать безопасную посуду для выпечки и
+                                приготовления пищи, для хранения пищи. А также обзор столовой посуды.</p>
+                            <a href="" class="btn btn-arrow calendar__btn">СКАЧАТЬ ГАЙД</a>
+                        </div>
+                    </div>
+
+                    <div class="calendar__item">
+                        <div class="calendar-date">
+                            <span class="calendar-date__day">10</span>
+                            <span class="calendar-date__month">февраля</span>
+                        </div>
+                        <div class="calendar-poster">
+                            <img src="./images/events/event2.jpg" alt="девушка ест">
+                        </div>
+                        <div class="calendar__event">
+                            <h1 class="calendar__heading">Как перестать переедать</h1>
+                            <h3 class="calendar__title">ПРЯМОЙ ЭФИР YOUTUBE | 10:00 (МСК)</h3>
+                            <p class="calendar__description">Переедание – главная причина набора лишнего веса и источник
+                                многих проблем со здоровьем. Зимой эта тема становится особенно актуальной, ведь впереди
+                                нас ждет лето.</p>
+                            <a href="" class="btn btn-arrow calendar__btn">СМОТРЕТЬ</a>
+                        </div>
+                    </div>
+
+                    <div class="calendar__item">
+                        <div class="calendar-date">
+                            <span class="calendar-date__day">18</span>
+                            <span class="calendar-date__month">февраля</span>
+                        </div>
+                        <div class="calendar-poster">
+                            <img src="./images/events/event3.jpg" alt="сахар">
+                        </div>
+                        <div class="calendar__event">
+                            <h1 class="calendar__heading">21 день без сахара</h1>
+                            <h3 class="calendar__title">БЕСПЛАТНЫЙ МАРАФОН</h3>
+                            <p class="calendar__description">Быстрое старение, лишний вес, проблемы с кожей, слабоумие,
+                                болезни сердца и сосудов - это еще далеко не все, на что мы обрекаем себя, годами
+                                находясь в сахарной зависимости. Я покажу вам легкий путь, как освободиться!</p>
+                            <a href="" class="btn btn-arrow calendar__btn">ПРИСОЕДИНИТЬСЯ</a>
+                        </div>
+                    </div>
+
+                    <div class="calendar__item">
+                        <div class="calendar-date">
+                            <span class="calendar-date__day">26</span>
+                            <span class="calendar-date__month">февраля</span>
+                        </div>
+                        <div class="calendar-poster">
+                            <img src="./images/events/event4.jpg" alt="девушка на кухне">
+                        </div>
+                        <div class="calendar__event">
+                            <h1 class="calendar__heading">Сам Себе Нутрициолог</h1>
+                            <h3 class="calendar__title">ОНЛАЙН КУРС</h3>
+                            <p class="calendar__description">На курсе вы найдете понятную и практичную информацию,
+                                которую захочется сразу внедрить в свою жизнь, сможете решить свои текущие проблемы и
+                                вопросы по здоровью, уровню энергии и питанию.</p>
+                            <a href="" class="btn btn-arrow calendar__btn">ПОДРОБНЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END calendar -->
+
+        <!-- form -->
+        <section class="page-section--bg">
+            <div class="container">
+                <div class="get-in-touch">
+                    <div class="get-in-touch__info">
+                        <span class="get-in-touch__title">Получайте уведомления, когда я публикую новые статьи!</span>
+                        <span class="get-in-touch__text">Будь в курсе последних новостей, объявлений и статей.</span>
+                    </div>
+                    <div class="get-in-touch__form">
+                        <form action="!">
+                            <fieldset class="get-in-touch__field">
+                                <input type="email" name="" id="" placeholder="Электронный адрес">
+                                <input type="button" value="Подписаться">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END form -->
+    </main>
+</body>
+
+</html>
