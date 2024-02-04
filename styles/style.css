@@ -3,13 +3,13 @@
     --color-black: #333333;
     --color-grey: #474747;
     --color-brand: #A7FC00;
-    --color-brand-hover: #7DBD00;
+    --color-brand-hover: #96e300;
     --color-brand-active: #619300;
     --color-bg: #f9f6f1;
     --color-border: #e0e0e0;
     --color-blue: #5500FC;
     --color-accent: #FCD300;
-    --color-accent-hover: #c9a800;
+    --color-accent-hover: #e2bd00;
     --color-accent-active: #7E6900;
     --color-white: #fff;
     --color-error: #FC5500;
@@ -273,11 +273,7 @@ input[type="email"]:required:focus {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 .page-header__menu a:hover {
@@ -285,11 +281,69 @@ input[type="email"]:required:focus {
     border-bottom: 1px solid var(--color-brand);
 }
 
+/* footer */
+.page-footer {
+    padding: 40px 0px;
+}
+
+.page-footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page-footer__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.page-footer__contact-list {
+    display: flex;
+    gap: 30px;
+}
+
+.page-footer__contact svg {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey);
+    border-radius: 40px;
+    transition: all 1s ease;
+}
+
+.page-footer__contact:hover svg {
+    background-color: var(--color-brand);
+}
+
+.page-footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page-footer__menu-title {
+    margin-bottom: 10px;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-heading--small);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-footer__menu-item a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
 
 /* HOMEPAGE */
 
 /* banner */
 .hero__content {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -307,9 +361,10 @@ input[type="email"]:required:focus {
     font-family: var(--font-family-heading);
     font-size: 48px;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 130%;
     letter-spacing: -0.42px;
     color: var(--color-grey);
+    text-transform: uppercase;
 }
 
 .hero-info__text {
@@ -322,14 +377,18 @@ input[type="email"]:required:focus {
 }
 
 .hero-info__buttons-group a {
-    width: 250px;
     font-size: 16px;
-    line-height: 24px;
+}
+
+.hero__img {
+    z-index: 2;
 }
 
 .hero-panel {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     align-items: center;
     gap: 20px;
     background-color: var(--color-white);
@@ -340,6 +399,10 @@ input[type="email"]:required:focus {
     padding: var(--padding-bottom--small);
     display: flex;
     flex-direction: column;
+}
+
+.hero-panel__item:nth-child(3) {
+    margin-right: 50px;
 }
 
 .hero-panel__num {
@@ -572,7 +635,7 @@ input[type="email"]:required:focus {
 .reviews-slider__img {
     width: 70px;
     height: 70px;
-    border-radius: var(--border-radius--circle);
+    border-radius: 70px;
 }
 
 .swiper {
@@ -935,6 +998,15 @@ input[type="email"]:required:focus {
     letter-spacing: -0.18px;
     line-height: 30px;
     padding-bottom: 40px;
+}
+
+.edu__heading {
+    padding-bottom: var(--padding-bottom);
+    color: var(--color-grey);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-heading--large);
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .edu-info {
@@ -1307,6 +1379,9 @@ h5 {
     transform: translate(-50%, -50%);
 }
 
+/* .central-figure {
+    /* Стилизация для центрального элемента */
+
 .effects {
     background-color: #D3FF7E;
 }
@@ -1336,6 +1411,27 @@ h5 {
     font-size: 20px;
 }
 
+.consultation-price__heading {
+    padding-bottom: var(--padding-bottom--small);
+    text-align: center;
+    color: var(--color-grey);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-heading--large);
+    text-transform: uppercase;
+}
+
+.consultation-price__text {
+    padding-bottom: var(--padding-bottom);
+    text-align: center;
+    font-size: var(--font-size-heading--small);
+}
+
+.consultation-price__href {
+    text-decoration: none;
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
 .consultation-price__box {
     display: flex;
     justify-content: space-between;
@@ -1344,11 +1440,15 @@ h5 {
 
 .consultation-price__card {
     padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     background-color: var(--color-bg);
 }
 
 .consultation-price__title {
+    padding-bottom: var(--padding-bottom--small);
     color: var(--color-black);
     text-align: center;
     font-family: var(--font-family-heading);
@@ -1356,6 +1456,15 @@ h5 {
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
+}
+
+.consultation-price__subtitle {
+    padding-bottom: var(--padding-bottom--small);
+    color: var(--color-accent);
+    font-family: var(--font-family-heading);
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 3%;
 }
 
 .action__heading {
@@ -2137,10 +2246,29 @@ h5 {
 }
 
 .course-hero__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 100px;
+}
+
+.course-hero__images {
+    position: relative;
+}
+
+.course-hero__images img:nth-child(2) {
+    position: absolute;
+    top: 280px;
+    left: 200px;
+}
+
+.course-hero__images img:nth-child(3) {
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+
+.course-hero__img {
+    border-radius: 400px;
 }
 
 .course-hero__heading {
@@ -2178,13 +2306,14 @@ h5 {
 }
 
 .edu-format__heading {
+    padding-bottom: var(--padding-bottom);
+    text-align: center;
     color: var(--color-grey);
     font-family: var(--font-family-heading);
     font-size: var(--font-size-heading--large);
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 2.1px;
+    text-transform: uppercase;
 }
 
 .edu-format__list {
@@ -2232,6 +2361,7 @@ h5 {
 }
 
 .edu-format__list-features {
+    padding-bottom: var(--padding-bottom--small);
     display: flex;
     flex-direction: column;
     gap: 20px;
