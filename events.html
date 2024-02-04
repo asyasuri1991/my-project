@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афиша</title>
+    <link rel="shortcut icon" href="./images/icon-logo.ico" type="image/x-icon">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
 
 <body>
     <!-- Header -->
-    <header class="page-header fixed">
+    <header class="page-header">
         <div class="container">
             <div class="page-header__row">
                 <div class="page-header__logo">
@@ -64,14 +65,14 @@
     <!-- END Header -->
     <main>
         <!-- banner -->
-        <section class="page-section">
+        <section class="banner-events page-section">
             <div class="container">
-                <div class="banner-events">
+                <div class="banner-events__content">
                     <img src="./images/events/banner-events1.jpg" alt="Афиша" width="300px" height="300px">
                     <div class="banner-events__text">
                         <h1 class="banner-events__heading">Афиша мероприятий</h1>
-                        <h3 class="banner-events__title">ВЫБИРАЙТЕ, ЧТО ИНТЕРЕСНО ВАМ, И РЕГИСТРИРУЙТЕСЬ</h3>
-                        <a href="#!" class="btn btn--primary">Смотреть афишу</a>
+                        <p class="banner-events__title">ВЫБИРАЙТЕ, ЧТО ИНТЕРЕСНО ВАМ, И РЕГИСТРИРУЙТЕСЬ</p>
+                        <a href="#calendar" class="btn btn--primary">Смотреть афишу</a>
                     </div>
                     <img src="./images/events/banner-events2.jpg" alt="тарелка с едой" width="300px" height="300px">
                 </div>
@@ -80,10 +81,10 @@
         <!-- END banner -->
 
         <!-- process -->
-        <section class="page-section--bg">
+        <section class="process page-section page-section--bg">
             <div class="container">
-                <div class="process">
-                    <div class="process__elem">
+                <ul class="process__content list-reset">
+                    <li class="process__elem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="84" height="83" viewBox="0 0 84 83" fill="none">
                             <path
                                 d="M42.0305 80.7261C63.7202 80.7261 81.3031 63.096 81.3031 41.3482C81.3031 19.6004 63.7202 1.97034 42.0305 1.97034C20.3408 1.97034 2.75781 19.6004 2.75781 41.3482C2.75781 63.096 20.3408 80.7261 42.0305 80.7261Z"
@@ -96,8 +97,8 @@
                                 stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p>Выбирайте, что интересно Вам, и регистрируйтесь.</p>
-                    </div>
-                    <div class="process__elem">
+                    </li>
+                    <li class="process__elem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
                             <path
                                 d="M77.703 39.3779C77.703 60.2663 60.8186 77.1921 40 77.1921C19.1814 77.1921 2.29703 60.2663 2.29703 39.3779C2.29703 18.4895 19.1814 1.56363 40 1.56363C60.8186 1.56363 77.703 18.4895 77.703 39.3779Z"
@@ -110,8 +111,8 @@
                                 stroke="#FBFBFB" stroke-width="1.5" stroke-linejoin="round" />
                         </svg>
                         <p>Вам придёт ссылка для участия в мероприятии и будут приходить напоминания.</p>
-                    </div>
-                    <div class="process__elem">
+                    </li>
+                    <li class="process__elem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="84" height="83" viewBox="0 0 84 83" fill="none">
                             <path
                                 d="M42.1514 79.7591C63.8377 79.7591 81.4179 62.129 81.4179 40.3812C81.4179 18.6334 63.8377 1.0033 42.1514 1.0033C20.465 1.0033 2.88477 18.6334 2.88477 40.3812C2.88477 62.129 20.465 79.7591 42.1514 79.7591Z"
@@ -124,17 +125,17 @@
                                 fill="white" />
                         </svg>
                         <p>Занесите мероприятие в свой календарь, чтобы не забыть.</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- END process -->
 
         <!-- calendar -->
-        <section class="page-section">
+        <section class="calendar page-section" id="calendar">
             <div class="container">
-                <div class="calendar">
-                    <div class="calendar__item">
+                <ul class="calendar__content">
+                    <li class="calendar__item">
                         <div class="calendar-date">
                             <span class="calendar-date__day">3</span>
                             <span class="calendar-date__month">февраля</span>
@@ -143,15 +144,14 @@
                             <img src="./images/events/event1.jpg" alt="посуда">
                         </div>
                         <div class="calendar__event">
-                            <h1 class="calendar__heading">Гайд: Безопасная посуда</h1>
+                            <h2 class="calendar__heading">Гайд: Безопасная посуда</h2>
                             <h3 class="calendar__title">БЕСПЛАТНЫЙ ГАЙД</h3>
                             <p class="calendar__description">Гайд о том, как выбрать безопасную посуду для выпечки и
                                 приготовления пищи, для хранения пищи. А также обзор столовой посуды.</p>
-                            <a href="" class="btn btn-arrow calendar__btn">СКАЧАТЬ ГАЙД</a>
+                            <a href="404.html" class="btn btn--arrow calendar__btn">Скачать гайд</a>
                         </div>
-                    </div>
-
-                    <div class="calendar__item">
+                    </li>
+                    <li class="calendar__item">
                         <div class="calendar-date">
                             <span class="calendar-date__day">10</span>
                             <span class="calendar-date__month">февраля</span>
@@ -160,16 +160,15 @@
                             <img src="./images/events/event2.jpg" alt="девушка ест">
                         </div>
                         <div class="calendar__event">
-                            <h1 class="calendar__heading">Как перестать переедать</h1>
+                            <h2 class="calendar__heading">Как перестать переедать</h2>
                             <h3 class="calendar__title">ПРЯМОЙ ЭФИР YOUTUBE | 10:00 (МСК)</h3>
                             <p class="calendar__description">Переедание – главная причина набора лишнего веса и источник
                                 многих проблем со здоровьем. Зимой эта тема становится особенно актуальной, ведь впереди
                                 нас ждет лето.</p>
-                            <a href="" class="btn btn-arrow calendar__btn">СМОТРЕТЬ</a>
+                            <a href="404.html" class="btn btn--arrow calendar__btn">Смотреть</a>
                         </div>
-                    </div>
-
-                    <div class="calendar__item">
+                    </li>
+                    <li class="calendar__item">
                         <div class="calendar-date">
                             <span class="calendar-date__day">18</span>
                             <span class="calendar-date__month">февраля</span>
@@ -178,16 +177,15 @@
                             <img src="./images/events/event3.jpg" alt="сахар">
                         </div>
                         <div class="calendar__event">
-                            <h1 class="calendar__heading">21 день без сахара</h1>
+                            <h2 class="calendar__heading">21 день без сахара</h2>
                             <h3 class="calendar__title">БЕСПЛАТНЫЙ МАРАФОН</h3>
                             <p class="calendar__description">Быстрое старение, лишний вес, проблемы с кожей, слабоумие,
                                 болезни сердца и сосудов - это еще далеко не все, на что мы обрекаем себя, годами
                                 находясь в сахарной зависимости. Я покажу вам легкий путь, как освободиться!</p>
-                            <a href="" class="btn btn-arrow calendar__btn">ПРИСОЕДИНИТЬСЯ</a>
+                            <a href="404.html" class="btn btn--arrow calendar__btn">Присоединиться</a>
                         </div>
-                    </div>
-
-                    <div class="calendar__item">
+                    </li>
+                    <li class="calendar__item">
                         <div class="calendar-date">
                             <span class="calendar-date__day">26</span>
                             <span class="calendar-date__month">февраля</span>
@@ -196,40 +194,45 @@
                             <img src="./images/events/event4.jpg" alt="девушка на кухне">
                         </div>
                         <div class="calendar__event">
-                            <h1 class="calendar__heading">Сам Себе Нутрициолог</h1>
+                            <h2 class="calendar__heading">Сам Себе Нутрициолог</h2>
                             <h3 class="calendar__title">ОНЛАЙН КУРС</h3>
                             <p class="calendar__description">На курсе вы найдете понятную и практичную информацию,
                                 которую захочется сразу внедрить в свою жизнь, сможете решить свои текущие проблемы и
                                 вопросы по здоровью, уровню энергии и питанию.</p>
-                            <a href="" class="btn btn-arrow calendar__btn">ПОДРОБНЕЕ</a>
+                            <a href="course.html" class="btn btn--arrow calendar__btn">Подробнее</a>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- END calendar -->
 
         <!-- form -->
-        <section class="page-section--bg">
+        <section class="get-in-touch page-section page-section--bg">
             <div class="container">
-                <div class="get-in-touch">
+                <div class="get-in-touch__content">
                     <div class="get-in-touch__info">
                         <span class="get-in-touch__title">Получайте уведомления, когда я публикую новые статьи!</span>
                         <span class="get-in-touch__text">Будь в курсе последних новостей, объявлений и статей.</span>
                     </div>
-                    <div class="get-in-touch__form">
-                        <form action="!">
+                    <div class="get-in-touch__form form-fade">
+                        <form method="POST"  action="./feedback/feedback-form.php" id="form">
                             <fieldset class="get-in-touch__field">
-                                <input type="email" name="" id="" placeholder="Электронный адрес">
-                                <input type="button" value="Подписаться">
+                                <input type="email" placeholder="Электронный адрес" required>
+                                <input type="submit" value="Подписаться">
                             </fieldset>
                         </form>
+                        <!-- <div class="form-success form-success_hide">
+                            <div class="form-success__message">Форма успешно отправлена. Нажмите <button type="button" class="form-success__btn">здесь</button>, если нужно отправить ещё одну форму.</div>
+                          </div> -->
                     </div>
                 </div>
             </div>
         </section>
         <!-- END form -->
     </main>
+    <script src="./js/header.js"></script>
+    <script src="./js/form-processing.js"></script>
 </body>
 
 </html>

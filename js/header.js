@@ -1,12 +1,18 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
 
 
-    var header = document.querySelector('header');
-    
-    
-    header.classList.toggle('fixed', window.scrollY > 0);
-    
-    
-    });
-    
-    
+    const header = document.querySelector('.page-header');
+
+
+  
+
+    if (window.scrollY >= 600) {
+        header.classList.add('fixed')
+    } else {
+        header.classList.remove('fixed')
+    }
+
+
+});
+
+

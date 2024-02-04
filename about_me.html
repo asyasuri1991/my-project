@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
+    <link rel="shortcut icon" href="./images/icon-logo.ico" type="image/x-icon">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
 
 <body>
     <!-- Header -->
-    <header class="page-header fixed">
+    <header class="page-header">
         <div class="container">
             <div class="page-header__row">
                 <div class="page-header__logo">
@@ -64,9 +65,9 @@
     <!-- END Header -->
     <main>
         <!-- about -->
-        <section class="page-section">
+        <section class="about page-section">
             <div class="container">
-                <div class="about">
+                <div class="about__content">
                     <div class="about__block">
                         <img src="./images/about-me.jpg" alt="девушка на кухне" width="550px" height="824px">
                         <div class="about-info">
@@ -83,17 +84,14 @@
                                 В моем блоге вы найдете вдохновение на изменение образа жизни, простые рецепты для
                                 здорового питания и советы, которые помогут вам легко начать менять свою жизнь к
                                 лучшему.</p>
-                                <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                                    <path d="M37.5528 30.5551C26.1034 19.4152 33.9901 0 49.9647 0C65.9393 0 73.826 19.4152 62.3766 30.5552L49.9647 42.6316L37.5528 30.5551Z" fill="#A7FC00"/>
-                                    <path d="M37.6249 69.4449C26.1754 80.5848 34.0621 100 50.0367 100C66.0113 100 73.898 80.5848 62.4486 69.4448L50.0367 57.3684L37.6249 69.4449Z" fill="#A7FC00"/>
-                                    <path d="M30.5551 62.4472C19.4152 73.8966 0 66.0099 0 50.0353C0 34.0607 19.4152 26.174 30.5552 37.6234L42.6316 50.0353L30.5551 62.4472Z" fill="#A7FC00"/>
-                                    <path d="M69.4449 62.3751C80.5848 73.8246 100 65.9379 100 49.9633C100 33.9887 80.5848 26.102 69.4448 37.5514L57.3684 49.9633L69.4449 62.3751Z" fill="#A7FC00"/>
-                                  </svg>
                             <div class="about-clients">
-                                <div class="about-clients__img">
-                                <img src="./images/reviews/review-portrait1.jpg" alt="девушка">
-                                <img src="./images/reviews/review-portrait1.jpg" alt="девушка">
-                                <img src="./images/reviews/review-portrait1.jpg" alt="девушка">
+                                <div class="about-clients__imgs">
+                                    <img class="about-clients__img" src="./images/about_me/client-img1.jpg"
+                                        alt="девушка">
+                                    <img class="about-clients__img" src="./images/about_me/client-img2.jpg"
+                                        alt="девушка">
+                                    <img class="about-clients__img" src="./images/about_me/client-img3.jpg"
+                                        alt="девушка">
                                 </div>
                                 <span style="color: var(--color-accent);">500+</span> <span>Счастливых клиентов</span>
                             </div>
@@ -103,15 +101,14 @@
                     <div class="about__block">
                         <div class="about-info">
                             <h3 class="about__title">МОЙ ПУТЬ НАЧАЛСЯ</h3>
-                            <p class="about__text">Помимо анемии у меня всегда были непростые отношения с едой, мне было
+                            <p class="about__text">У меня всегда были непростые отношения с едой, мне было
                                 вкусно мучное и часто я переедала, в совокупности с моей генетикой по ожирению — это
                                 провоцировало рост лишних килограмм.</p>
                             <p class="about__text">Я перепробовала множество диет, издевалась над организмом и то
                                 худела, то
                                 вновь набирала вес. В кокой-то момент меня перестало это устраивать, и я начала глубоко
                                 изучать информацию, учась любви и уважению к собственному телу. </p>
-                            <a href="#!" class="btn btn--arrow">Мое образование <img class="tick"
-                                    src="./images/fluent_ios-arrow-24-regular.png" alt=""></a>
+                            <a href="#education" class="btn btn--arrow"><span>Мое образование</span></a>
                         </div>
                         <img src="./images/free-15min-meeting.jpg" alt="девушка">
                     </div>
@@ -119,12 +116,13 @@
             </div>
         </section>
         <!-- END about -->
+
         <!-- nutriciolog -->
-        <section class="page-section--bg">
+        <section class="about-nutriciolog page-section page-section--bg">
             <div class="container">
-                <div class="about-nutriciolog">
+                <div class="about-nutriciolog__content">
                     <div class="intro">
-                        <h1 class="intro__heading">Я верю</h1>
+                        <h2 class="intro__heading">Я верю</h2>
                         <div class="intro__text">Что грамотное отношение к своему телу — это важный навык для каждого
                             человека. Важно не только то, что мы едим, но и как. Еда на бегу, “ у меня нет времени
                             нормально
@@ -138,7 +136,7 @@
                     <div class="nutriciolog">
                         <img src="./images/nutriciolog.jpg" alt="девушка на кухне">
                         <div class="nutriciolog__info">
-                            <h1 class="nutriciolog__heading">КТО ТАКОЙ НУТРИЦИОЛОГ?</h1>
+                            <h2 class="nutriciolog__heading">КТО ТАКОЙ НУТРИЦИОЛОГ?</h2>
                             <p class="nutriciolog__text">Нутрициология — наука о питании человека, если коротко.
                                 Нутрициолог
                                 – это не врач, квалификация Нутрициолога не требует медицинского образования, но требует
@@ -147,7 +145,7 @@
                                 нутрициолог и врач должны работать вместе или нутрициолог обязан отправить клиента к
                                 врачу,
                                 если обнаружится какое-то возможное заболевание. Подробнее о том, кто такой нутрициолог
-                                можно прочитать у меня в блоге.</p>
+                                можно прочитать у меня в блоге Вконтакте.</p>
                             <a href="#!" class="btn btn--arrow">Подробнее</a>
                         </div>
                     </div>
@@ -156,54 +154,61 @@
         </section>
         <!-- END nutriciolog -->
 
-        <!-- socials -->
-        <section class="page-section--bg">
+        <!-- Contact Socials -->
+        <section class="contact page-section page-section--bg">
             <div class="container">
-                <div class="contact">
-                    <h1 class="contact__heading">ОСТАВАЙСЯ НА СВЯЗИ</h1>
-                    <p class="contact__text">Моя еженедельная <a href="" class="text--color">e-mail рассылка</a>
+                <div class="contact__content">
+                    <h2 class="contact__heading">ОСТАВАЙСЯ НА СВЯЗИ</h2>
+                    <p class="contact__text">Моя еженедельная <a href="#!" class="contact__text-highlight">e-mail
+                            рассылка</a>
                         позволит вам первым <br>узнавать обо всех новых материалах и событиях</p>
-                    <div class="contact-socials__wrapper">
-                        <a href="#!" class="contact__socials">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M12.7782 5C11.5109 5 10.731 5 9.56113 5C8.58626 5 8.09883 5.4 8.09883 5.6C8.09883 5.8 8.58626 6 8.87872 6.2C9.17118 6.4 9.46364 7 9.46364 7.4V10.8C9.46364 11.1 9.36616 11.3 9.17118 11.6C9.0737 11.7 8.87872 11.7 8.78124 11.7C8.68375 11.7 8.48878 11.7 8.39129 11.5C7.12396 9.8 7.12396 9.6 5.3692 6.2C5.07674 6.1 4.97925 5.9 4.88177 5.8C4.68679 5.6 4.39433 5.6 4.00439 5.6C2.54209 5.6 1.66471 5.6 0.787325 5.6C-0.0900557 5.6 -0.0900557 6.1 0.104918 6.4C1.17727 8.7 2.24963 10.8 3.51695 13C4.97925 15.6 6.24658 17.1 8.48878 18.2C8.97621 18.5 9.95108 18.7 11.0234 18.7H13.2656C13.5581 18.7 14.0455 18.5 14.0455 18.1V16.3C14.0455 15.8 14.533 15.6 14.8254 15.5C15.1179 15.4 15.5078 15.6 15.6053 15.8C16.8726 17.2 16.7752 17.1 17.945 18.3C18.2375 18.6 18.4324 18.7 18.9199 18.7C22.2344 18.7 22.3319 18.7 23.1118 18.7C23.3068 18.7 23.6967 18.4 23.6967 18.2C23.7942 18 23.9892 17.4 23.6967 17C22.5269 15.6 21.357 14.4 20.1872 13.1C20.0897 13 19.9922 12.9 19.9922 12.7C19.9922 12.6 20.0897 12.4 20.1872 12.3C21.4545 10.5 22.5269 8.9 23.6967 7C24.0867 6.4 23.9892 5.9 23.9892 5.8C23.8917 5.6 23.6967 5.4 23.4042 5.4C21.8445 5.4 21.1621 5.4 19.5048 5.4C19.0173 5.4 18.5299 5.4 18.3349 6C17.6525 7.6 16.3852 10.1 15.4103 11.2C15.2154 11.4 14.9229 11.5 14.7279 11.5C14.533 11.5 14.2405 11.3 14.2405 11C14.2405 9.2 14.2405 7.7 14.2405 6C14.2405 5.5 14.0455 5.3 13.8505 5.2C13.4606 5.1 13.0707 5 12.7782 5Z"
-                                    fill="white" />
-                            </svg>
-                            Подписывайся на Вконтакте
-                        </a>
-                        <a href="#!" class="contact__socials">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M20.5 18.7C19.4 19.5 14 19.5 12 19.5C9.9 19.5 4.9 19.5 3.7 18.8C2.6 18.1 2.1 15.3 2 12.5C2 9.69995 2.6 6.59995 3.7 5.99995C4.9 5.19995 10 5.19995 12 5.19995C14 5.19995 19.3 5.19995 20.5 5.99995C21.5 6.69995 22 9.69995 22 12.4C21.9 15.2 21.5 18 20.5 18.7ZM10.1 8.59995V16.2L15.8 12.4L10.1 8.59995Z"
-                                    fill="white" />
-                            </svg>
-                            Подписывайся на Youtube
-                        </a>
-                        <a href="#!" class="contact__socials">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M2.3 11.6194L6.5 13.2194L8.1 18.5194C8.2 18.8194 8.6 19.0194 8.9 18.7194L11.3 16.8194C11.5 16.6194 11.9 16.6194 12.2 16.8194L16.5 19.9194C16.8 20.1194 17.2 20.0194 17.3 19.6194L20.4 4.61938C20.5 4.21938 20.1 3.91938 19.7 4.01938L2.3 10.7194C1.9 10.9194 1.9 11.5194 2.3 11.6194ZM7.9 12.4194L16.2 7.31938C16.4 7.21938 16.5 7.41938 16.4 7.51938L9.6 13.9194C9.4 14.1194 9.2 14.4194 9.2 14.8194L9 16.5194C9 16.7194 8.6 16.8194 8.6 16.5194L7.7 13.3194C7.5 13.0194 7.6 12.6194 7.9 12.4194Z"
-                                    fill="white" />
-                            </svg>
-                            Подписывайся на Telegram
-                        </a>
-                    </div>
+                    <ul class="contact-socials__list list-reset">
+                        <li>
+                            <a href="404.html" class="contact__social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12.7782 5C11.5109 5 10.731 5 9.56113 5C8.58626 5 8.09883 5.4 8.09883 5.6C8.09883 5.8 8.58626 6 8.87872 6.2C9.17118 6.4 9.46364 7 9.46364 7.4V10.8C9.46364 11.1 9.36616 11.3 9.17118 11.6C9.0737 11.7 8.87872 11.7 8.78124 11.7C8.68375 11.7 8.48878 11.7 8.39129 11.5C7.12396 9.8 7.12396 9.6 5.3692 6.2C5.07674 6.1 4.97925 5.9 4.88177 5.8C4.68679 5.6 4.39433 5.6 4.00439 5.6C2.54209 5.6 1.66471 5.6 0.787325 5.6C-0.0900557 5.6 -0.0900557 6.1 0.104918 6.4C1.17727 8.7 2.24963 10.8 3.51695 13C4.97925 15.6 6.24658 17.1 8.48878 18.2C8.97621 18.5 9.95108 18.7 11.0234 18.7H13.2656C13.5581 18.7 14.0455 18.5 14.0455 18.1V16.3C14.0455 15.8 14.533 15.6 14.8254 15.5C15.1179 15.4 15.5078 15.6 15.6053 15.8C16.8726 17.2 16.7752 17.1 17.945 18.3C18.2375 18.6 18.4324 18.7 18.9199 18.7C22.2344 18.7 22.3319 18.7 23.1118 18.7C23.3068 18.7 23.6967 18.4 23.6967 18.2C23.7942 18 23.9892 17.4 23.6967 17C22.5269 15.6 21.357 14.4 20.1872 13.1C20.0897 13 19.9922 12.9 19.9922 12.7C19.9922 12.6 20.0897 12.4 20.1872 12.3C21.4545 10.5 22.5269 8.9 23.6967 7C24.0867 6.4 23.9892 5.9 23.9892 5.8C23.8917 5.6 23.6967 5.4 23.4042 5.4C21.8445 5.4 21.1621 5.4 19.5048 5.4C19.0173 5.4 18.5299 5.4 18.3349 6C17.6525 7.6 16.3852 10.1 15.4103 11.2C15.2154 11.4 14.9229 11.5 14.7279 11.5C14.533 11.5 14.2405 11.3 14.2405 11C14.2405 9.2 14.2405 7.7 14.2405 6C14.2405 5.5 14.0455 5.3 13.8505 5.2C13.4606 5.1 13.0707 5 12.7782 5Z"
+                                        fill="white" />
+                                </svg>
+                                Подписывайся на Вконтакте
+                            </a>
+                        </li>
+                        <li>
+                            <a href="404.html" class="contact__social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M20.5 18.7C19.4 19.5 14 19.5 12 19.5C9.9 19.5 4.9 19.5 3.7 18.8C2.6 18.1 2.1 15.3 2 12.5C2 9.69995 2.6 6.59995 3.7 5.99995C4.9 5.19995 10 5.19995 12 5.19995C14 5.19995 19.3 5.19995 20.5 5.99995C21.5 6.69995 22 9.69995 22 12.4C21.9 15.2 21.5 18 20.5 18.7ZM10.1 8.59995V16.2L15.8 12.4L10.1 8.59995Z"
+                                        fill="white" />
+                                </svg>
+                                Подписывайся на Youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="404.html" class="contact__social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M2.3 11.6194L6.5 13.2194L8.1 18.5194C8.2 18.8194 8.6 19.0194 8.9 18.7194L11.3 16.8194C11.5 16.6194 11.9 16.6194 12.2 16.8194L16.5 19.9194C16.8 20.1194 17.2 20.0194 17.3 19.6194L20.4 4.61938C20.5 4.21938 20.1 3.91938 19.7 4.01938L2.3 10.7194C1.9 10.9194 1.9 11.5194 2.3 11.6194ZM7.9 12.4194L16.2 7.31938C16.4 7.21938 16.5 7.41938 16.4 7.51938L9.6 13.9194C9.4 14.1194 9.2 14.4194 9.2 14.8194L9 16.5194C9 16.7194 8.6 16.8194 8.6 16.5194L7.7 13.3194C7.5 13.0194 7.6 12.6194 7.9 12.4194Z"
+                                        fill="white" />
+                                </svg>
+                                Подписывайся на Telegram
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <!-- END socials -->
+        <!-- END Contact Socials -->
 
         <!-- education -->
-        <section class="page-section">
+        <section class="edu page-section" id="education">
             <div class="container">
-                <div class="edu">
-                    <h1 class="edu__heading">МОЕ ОБРАЗОВАНИЕ</h1>
-                    <div class="edu-info">
-                        <div class="edu-info__item">
+                <div class="edu__content">
+                    <h2 class="edu__heading">МОЕ ОБРАЗОВАНИЕ</h2>
+                    <ul class="edu-info list-reset">
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -217,8 +222,8 @@
                             </div>
                             <p class="edu-info__text">Дипломированный нутрициолог, ФГБОУВО “Российский государственный
                                 социальный университет”, г.Москва</p>
-                        </div>
-                        <div class="edu-info__item">
+                        </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -232,8 +237,8 @@
                             </div>
                             <p class="edu-info__text">Участник образовательных программ Института Превентивной Медицины
                                 Preventage и PreventageLiveSchool.</p>
-                        </div>
-                        <div class="edu-info__item">
+                        </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -247,8 +252,8 @@
                             </div>
                             <p class="edu-info__text">Европейский Институт естественно-научных исследований
                                 “Нутрициолог, фуд-коуч”</p>
-                        </div>
-                        <div class="edu-info__item">
+                            </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -262,8 +267,8 @@
                             </div>
                             <p class="edu-info__text">Диплом натуропата COLLEGE of NATUROPATHIC MEDICINE CNM, London,
                                 United Kingdom.</p>
-                        </div>
-                        <div class="edu-info__item">
+                        </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -277,8 +282,8 @@
                             </div>
                             <p class="edu-info__text">Сертифицированный слушатель курса “Основы рационально питания”
                                 Московский Колледж фитнеса и бодибилдинга им. Бена Вейдера</p>
-                        </div>
-                        <div class="edu-info__item">
+                        </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -292,8 +297,8 @@
                             </div>
                             <p class="edu-info__text">Дипломированный “Специалист по модификации образа жизни и
                                 немедикаментозному оздоровлению”</p>
-                        </div>
-                        <div class="edu-info__item">
+                        </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -308,8 +313,8 @@
                             <p class="edu-info__text">Сертифицированный участник курсов Академия UNIPROF “Клиническая
                                 ИММУНОЛОГИЯ” и “Персонализированная диетология”, мастер-класс Метод масс-спектрометрии
                                 микробных маркеров (МСММ) по Осипову Г.А.</p>
-                        </div>
-                        <div class="edu-info__item">
+                        </li>
+                        <li class="edu-info__item">
                             <div class="edu-info__check">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                                     fill="none">
@@ -323,26 +328,26 @@
                             </div>
                             <p class="edu-info__text">Дипломированный коуч. Курс «современной диетологии и
                                 нутрициологии» R&E Institute (Европейский институт междисциплинарных исследований)</p>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- END education -->
 
-        <!-- form -->
-        <section class="page-section--bg">
+        <!-- Get-in-touch form -->
+        <section class="get-in-touch page-section page-section--bg">
             <div class="container">
-                <div class="get-in-touch">
+                <div class="get-in-touch__content">
                     <div class="get-in-touch__info">
                         <span class="get-in-touch__title">Получайте уведомления, когда я публикую новые статьи!</span>
                         <span class="get-in-touch__text">Будь в курсе последних новостей, объявлений и статей.</span>
                     </div>
-                    <div class="get-in-touch__form">
+                    <div class="get-in-touch__form form-fade">
                         <form action="!">
                             <fieldset class="get-in-touch__field">
-                                <input type="email" name="" id="" placeholder="Электронный адрес">
-                                <input type="button" value="Подписаться">
+                                <input type="email" placeholder="Электронный адрес" required>
+                                <input type="submit" value="Подписаться">
                             </fieldset>
                         </form>
                     </div>
@@ -351,6 +356,7 @@
         </section>
         <!-- END form -->
     </main>
+    <script src="./js/header.js"></script>
 </body>
 
 </html>
