@@ -1,26 +1,14 @@
-
 <?php
-$to = "asya.suri@yandex.ru";
-
-$from = $_POST['email'];
-
-
-$subject = "Новое сообщение с сайта";
-
-
-if(mail($to,$subject,$message,$headers)) {
-
-
-echo "Сообщение отправлено!";
-
-
+$email = $_POST['email'];
+$email = htmlspecialchars($email);
+$email = urldecode($email);
+$email = trim($email);
+//echo $fio;
+//echo "<br>";
+//echo $email;
+if (mail("asya.suri@yandex.ru", "Заявка с сайта", ". E-mail: ".$email ,"From: example2@mail.ru \r\n"))
+ {     echo "сообщение успешно отправлено";
 } else {
-
-
-echo "Ошибка при отправке сообщения.";
-
-
+    echo "при отправке сообщения возникли ошибки";
 }
-
-
 ?>
