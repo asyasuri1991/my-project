@@ -1,13 +1,28 @@
-    let end = new Date(2024, 2, 26);
-    function countdown() {
-        let now = new Date();
-        let str = "";
-        let days = Math.floor((end - now) / (1000 * 60 * 60 * 24));
-        let nowH = new Date();
-        let hours = 24 - now.getHours();
-        let minutes = 60 - now.getMinutes();
-        let seconds = 60 - now.getSeconds();
-        str = `До конца распродажи осталось ${days} дней ${hours} часов ${minutes} минут ${seconds} секунд`;
-        document.querySelector(".timer").innerHTML = str;
+function timer() {
+    let days, hours, minutes, seconds;
+    let endDate = new Date("2024-02-26T00:00:00").getTime();
+    function calc() {
+        let startDate = new Date().getTime();
+        let timeLeft = parseInt((endDate - startDate) / 1000);
+        if (timeLeft >= 0) {
+            days = parseInt(timeLeft / 86400);
+            timeLeft = timeLeft % 86400;
+
+            hours = parseInt(timeLeft / 3600);
+            timeLeft = timeLeft % 3600;
+
+            minutes = parseInt(timeLeft / 60);
+            seconds = parseInt(timeLeft % 60);
+
+            document.getElementById('days').innerHTML = ('0' + days).slice(-2);
+            document.getElementById('hours').innerHTML = ('0' + hours).slice(-2);
+            document.getElementById('minutes').innerHTML = ('0' + minutes).slice(-2);
+            document.getElementById('seconds').innerHTML = ('0' + seconds).slice(-2);
+        } else {
+            clearInterval(timer);
+        }
     }
-    setInterval("countdown()", 1000);    
+    calc();
+    let timer = setInterval(calc, 1000);
+}
+timer();

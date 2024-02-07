@@ -51,11 +51,11 @@
                 <div class="page-header__menu-wrapper">
                     <nav class="page-header__nav">
                         <ul class="page-header__menu">
-                            <li><a href="about_me.html">Обо мне</a></li>
-                            <li><a href="consultation.html">Консультация</a></li>
-                            <li><a href="course.html">Курс</a></li>
-                            <li><a href="recipes.html">Рецепты</a></li>
-                            <li><a href="events.html">Афиша</a></li>
+                            <li><a href="about_me.html" class="page-header__menu-item">Обо мне</a></li>
+                            <li><a href="consultation.html" class="page-header__menu-item">Консультация</a></li>
+                            <li><a href="course.html" class="page-header__menu-item">Курс</a></li>
+                            <li><a href="recipes.html" class="page-header__menu-item">Рецепты</a></li>
+                            <li><a href="events.html" class="page-header__menu-item">Афиша</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -119,7 +119,7 @@
                             <div class="books-grid__box-img">
                                 <img class="books-grid__img" src="./images/recipes/smoothies.jpg" alt="смузи">
                             </div>
-                            <h3 class="books-grid__title books-grid__btn">Смузи</h3>
+                            <h3 class="books-grid__title">Смузи</h3>
                             <p class="books-grid__price">490 ₽</p>
                             <a href="" class="btn btn--primary books-grid__btn">Купить</a>
                         </li>
@@ -127,7 +127,7 @@
                             <a href="#form">
                                 <img class="books-grid__img" src="./images/recipes/lunch.jpg" alt="обед">
                             </a>
-                            <a href="#form">
+                            <a href="#form" class="books-grid__item-link">
                                 <h3 class="books-grid__title books-grid__title--disabled">Обеды</h3>
                             </a>
                             <p class="books-grid__price  books-grid__price--disabled">Скоро в продаже</p>
@@ -137,7 +137,7 @@
                             <a href="#form">
                                 <img class="books-grid__img" src="./images/recipes/dinner.jpg" alt="ужин">
                             </a>
-                            <a href="#form">
+                            <a href="#form" class="books-grid__item-link">
                                 <h3 class="books-grid__title books-grid__title--disabled">Ужины</h3>
                             </a>
                             <p class="books-grid__price books-grid__price--disabled">Скоро в продаже</p>
@@ -149,7 +149,8 @@
                     <div class="books-grid__modal" id="modal1">
                         <div class="books-grid__modal-box">
                             <div class="books-grid__modal-img">
-                                <img src="./images/recipes/breakfast.jpg" alt="завтрак">
+                                <img class="books-grid__modal-picture" src="./images/recipes/breakfast.jpg"
+                                    alt="завтрак">
                             </div>
                             <div class="books-grid__modal-inner">
                                 <h3 class="books-grid__modal-title">Завтраки ПП-рецепты</h3>
@@ -174,7 +175,8 @@
                     <div class="books-grid__modal" id="modal2">
                         <div class="books-grid__modal-box">
                             <div class="books-grid__modal-img">
-                                <img src="./images/recipes/weightloss.jpg" alt="тарелка салата">
+                                <img class="books-grid__modal-picture" src="./images/recipes/weightloss.jpg"
+                                    alt="тарелка салата">
                             </div>
                             <div class="books-grid__modal-inner">
                                 <h3 class="books-grid__modal-title">Рецепты для снижения веса</h3>
@@ -201,7 +203,8 @@
                     <div class="books-grid__modal" id="modal3">
                         <div class="books-grid__modal-box">
                             <div class="books-grid__modal-img">
-                                <img src="./images/recipes/desserts.jpg" alt="десерты">
+                                <img class="books-grid__modal-picture" src="./images/recipes/desserts.jpg"
+                                    alt="десерты">
                             </div>
                             <div class="books-grid__modal-inner">
                                 <h3 class="books-grid__modal-title">Десерты</h3>
@@ -226,7 +229,7 @@
                     <div class="books-grid__modal" id="modal4">
                         <div class="books-grid__modal-box">
                             <div class="books-grid__modal-img">
-                                <img src="./images/recipes/smoothies.jpg" alt="смузи">
+                                <img class="books-grid__modal-picture" src="./images/recipes/smoothies.jpg" alt="смузи">
                             </div>
                             <div class="books-grid__modal-inner">
                                 <h3 class="books-grid__modal-title">Смузи</h3>
@@ -257,7 +260,7 @@
             <div class="container">
                 <div class="recipes-form__content">
                     <div>
-                        <img src="./images/recipes/form-img.jpg" alt="Девушка за ноутбуком пишет имейл">
+                        <img class="recipes-form__img" src="./images/recipes/form-img.jpg" alt="Девушка за ноутбуком пишет имейл">
                     </div>
 
                     <form action="!" class="recipes-form__box form-fade">
@@ -294,7 +297,8 @@
                     <div class="recipes-box">
 
                         <a class="recipes-box__item">
-                            <img src="./images/recipes/apple-pie.jpg" alt="яблочный пирог">
+                            <img class="recipes-box__item-img" src="./images/recipes/apple-pie.jpg"
+                                alt="яблочный пирог">
                             <h3 class="recipes-box__title">Яблочный пирог</h3>
                             <div class="recipes-box__details">
                                 <span>Калорийность на порцию</span>
@@ -304,7 +308,7 @@
                             </div>
                         </a>
                         <a class="recipes-box__item">
-                            <img src="./images/recipes/pancakes.jpg" alt="блинчики">
+                            <img class="recipes-box__item-img" src="./images/recipes/pancakes.jpg" alt="блинчики">
                             <h3 class="recipes-box__title">Блинчики Vegan</h3>
                             <div class="recipes-box__details">
                                 <span>Калорийность на порцию</span>
@@ -314,7 +318,7 @@
                             </div>
                         </a>
                         <a class="recipes-box__item">
-                            <img src="./images/recipes/poke.jpg" alt="поке">
+                            <img class="recipes-box__item-img" src="./images/recipes/poke.jpg" alt="поке">
                             <h3 class="recipes-box__title">Поке-боул</h3>
                             <div class="recipes-box__details">
                                 <span>Калорийность на порцию</span>
@@ -348,29 +352,36 @@
                             я вас на это вдохновлю!</p>
 
                         <div class="recipes-hero__socials">
-                            <a href="about_me.html" class="btn btn--arrow">ПОдробнее обо мне</a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
+                            <a href="about_me.html" class="btn btn--arrow">Подробнее обо мне</a>
+                            <a href="">
+                                <svg class="recipes-hero__socials-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
                                     <path
                                         d="M12.7782 5C11.5109 5 10.731 5 9.56113 5C8.58626 5 8.09883 5.4 8.09883 5.6C8.09883 5.8 8.58626 6 8.87872 6.2C9.17118 6.4 9.46364 7 9.46364 7.4V10.8C9.46364 11.1 9.36616 11.3 9.17118 11.6C9.0737 11.7 8.87872 11.7 8.78124 11.7C8.68375 11.7 8.48878 11.7 8.39129 11.5C7.12396 9.8 7.12396 9.6 5.3692 6.2C5.07674 6.1 4.97925 5.9 4.88177 5.8C4.68679 5.6 4.39433 5.6 4.00439 5.6C2.54209 5.6 1.66471 5.6 0.787325 5.6C-0.0900557 5.6 -0.0900557 6.1 0.104918 6.4C1.17727 8.7 2.24963 10.8 3.51695 13C4.97925 15.6 6.24658 17.1 8.48878 18.2C8.97621 18.5 9.95108 18.7 11.0234 18.7H13.2656C13.5581 18.7 14.0455 18.5 14.0455 18.1V16.3C14.0455 15.8 14.533 15.6 14.8254 15.5C15.1179 15.4 15.5078 15.6 15.6053 15.8C16.8726 17.2 16.7751 17.1 17.945 18.3C18.2375 18.6 18.4324 18.7 18.9199 18.7C22.2344 18.7 22.3319 18.7 23.1118 18.7C23.3068 18.7 23.6967 18.4 23.6967 18.2C23.7942 18 23.9892 17.4 23.6967 17C22.5269 15.6 21.357 14.4 20.1872 13.1C20.0897 13 19.9922 12.9 19.9922 12.7C19.9922 12.6 20.0897 12.4 20.1872 12.3C21.4545 10.5 22.5269 8.9 23.6967 7C24.0867 6.4 23.9892 5.9 23.9892 5.8C23.8917 5.6 23.6967 5.4 23.4042 5.4C21.8445 5.4 21.1621 5.4 19.5048 5.4C19.0173 5.4 18.5299 5.4 18.3349 6C17.6525 7.6 16.3852 10.1 15.4103 11.2C15.2154 11.4 14.9229 11.5 14.7279 11.5C14.533 11.5 14.2405 11.3 14.2405 11C14.2405 9.2 14.2405 7.7 14.2405 6C14.2405 5.5 14.0455 5.3 13.8505 5.2C13.4606 5.1 13.0707 5 12.7782 5Z"
                                         fill="white" />
-                                </svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg class="recipes-hero__socials-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
                                     <path
                                         d="M20.5 18.7C19.4 19.5 14 19.5 12 19.5C9.9 19.5 4.9 19.5 3.7 18.8C2.6 18.1 2.1 15.3 2 12.5C2 9.69995 2.6 6.59995 3.7 5.99995C4.9 5.19995 10 5.19995 12 5.19995C14 5.19995 19.3 5.19995 20.5 5.99995C21.5 6.69995 22 9.69995 22 12.4C21.9 15.2 21.5 18 20.5 18.7ZM10.1 8.59995V16.2L15.8 12.4L10.1 8.59995Z"
                                         fill="white" />
-                                </svg></a>
-                            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none">
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg class="recipes-hero__socials-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
                                     <path
                                         d="M2.3 11.6194L6.5 13.2194L8.1 18.5194C8.2 18.8194 8.6 19.0194 8.9 18.7194L11.3 16.8194C11.5 16.6194 11.9 16.6194 12.2 16.8194L16.5 19.9194C16.8 20.1194 17.2 20.0194 17.3 19.6194L20.4 4.61938C20.5 4.21938 20.1 3.91938 19.7 4.01938L2.3 10.7194C1.9 10.9194 1.9 11.5194 2.3 11.6194ZM7.9 12.4194L16.2 7.31938C16.4 7.21938 16.5 7.41938 16.4 7.51938L9.6 13.9194C9.4 14.1194 9.2 14.4194 9.2 14.8194L9 16.5194C9 16.7194 8.6 16.8194 8.6 16.5194L7.7 13.3194C7.5 13.0194 7.6 12.6194 7.9 12.4194Z"
                                         fill="white" />
-                                </svg></a>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-
-                    <img src="./images/recipes/hero-portrait.jpg" alt="портрет девушки">
+                    <div>
+                        <img class="recipes-hero__image" src="./images/recipes/hero-portrait.jpg" alt="портрет девушки">
+                    </div>
                 </div>
             </div>
         </section>

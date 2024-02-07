@@ -2,7 +2,135 @@
     .btn--primary:hover {
         background-color: var(--color-brand-hover);
     }
+
+    .btn--secondary:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    .btn--arrow:hover {
+        border-color: var(--color-brand);
+    }
+
+    .btn--arrow:hover::after {
+        transform: translateX(90px);
+        opacity: 1;
+    }
+
+    .logo:hover {
+        color: var(--color-accent);
+    }
+
+    .page-footer__contact-item:hover {
+        background-color: var(--color-accent);
+    }
+
+    .page-header__menu-item:hover {
+        color: var(--color-brand);
+        border-bottom: 1px solid var(--color-brand);
+    }
+
+    .page-footer__menu-item:hover {
+        color: var(--color-brand);
+    }
+
+    .contact__social:hover .contact__social-item {
+        background-color: var(--color-accent);
+    }
+
+    .contact__social:hover {
+        transform: translateX(15px);
+    }
+
+    .services-group__item:hover {
+        box-shadow: 0px 50px 80px -40px var(--color-brand);
+        cursor: pointer;
+    }
+
+    .services-group__item:hover .services-group__title {
+        color: var(--color-brand);
+    }
+
+    .promo__item:hover {
+        transform: scale(1.05, 1.05);
+    }
+
+    .blog-box__item:hover .blog-box__short-text {
+        color: var(--color-accent-hover);
+    }
+
+    .edu-info__item:hover {
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    .edu-info__check:hover svg path {
+        fill: var(--color-accent);
+    }
+
+    .edu-info__check svg path {
+        transition: all 0.6s ease;
+    }
+
+    .get-in-touch__form input[type="submit"]:hover {
+        background-color: var(--color-brand);
+        border: 1px solid var(--color-brand);
+    }
+
+    .consultation-info__card:hover {
+        box-shadow: 0px 50px 80px -40px var(--color-brand);
+    }
+
+    .action-tab__link:hover {
+        color: var(--color-accent);
+    }
+
+    .tablinks:hover {
+        border-radius: 40px 40px 0 0;
+        background-color: var(--color-bg);
+    }
+
+    .tablinks.active {
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .action-tab__btn:hover .action-tab__btn-img {
+        background-color: var(--color-accent);
+    }
+
+    .action-tab__btn:hover .action-tab__btn-text {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+    }
+
+    .banner-recipes__btn:hover {
+        background-color: var(--color-brand);
+    }
+
+    .recipes__link:hover svg path {
+        transition: all 0.4s ease;
+    }
+
+    .recipes__link:hover {
+        color: var(--color-accent-hover);
+    }
+
+    .recipes-box__item:hover {
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .recipes-hero__socials svg:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    .recipes-hero__socials-icon:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+    .basic-lessons__list-item:hover {
+        box-shadow: 0px 50px 80px -40px var(--color-accent);
+    }
+
 }
+
 @media screen and (width < 1024px) {
     .page-section {
         padding: 60px 0;
@@ -61,48 +189,131 @@
         width: 328px;
     }
 
-    .banner {
+    /* footer */
+    .page-footer__row {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        gap: 40px;
+        align-items: flex-start;
+        gap: 30px;
     }
 
-    .banner-info {
+    .page-footer__box {
+        gap: 16px;
+    }
+
+    .page-footer__contact-list {
+        gap: 16px;
+    }
+
+    .page-footer__menu {
+        gap: 16px;
+    }
+
+    .page-footer__menu-title {
+        font-size: 18px;
+    }
+
+    .page-footer__menu-item {
+        font-size: 16px;
+    }
+
+    /* homepage */
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-info {
         width: 328px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
     }
 
-    .banner-info__title {
+    .hero-info__heading {
         font-size: 24px;
     }
 
-    .banner-info__buttons-group {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+    .hero-info__text {
+        font-size: 16px;
     }
 
-    .banner img{
+    .hero-info__buttons-group {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .hero__img img {
         width: 328px;
         height: 424px;
     }
 
-    .offers__heading {
+    .hero-panel {
+        position: inherit;
+        width: 328px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .hero-panel__item {
+        padding: var(--padding-bottom--small);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .hero-panel__item:nth-child(3) {
+        margin-right: 0px;
+    }
+
+    .hero-panel__num {
         font-size: 24px;
     }
 
-    .offers-group {
-        padding: 0;
-        grid-template-columns: 1fr;
+    .offers__heading {
+        font-size: 24px;
+        line-height: 30px;
     }
 
-    .offers-group__item {
-        width: 328px;
-        padding: 40px 20px;
+    .offers__text {
+        font-size: 16px;
+    }
+
+    .offers-features {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .offers-features__item {
+        padding: 20px 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offers-features__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .offers-features__title h3 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .offers-features__text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
     }
 
     .contact__heading {
@@ -113,50 +324,890 @@
         font-size: 18px;
     }
 
-    .reviews__heading {
+    .contact__social {
+        font-size: 16px;
+    }
+
+    .services__heading {
+        margin-bottom: 20px;
         font-size: 24px;
     }
 
-    .promo {
+    .services-group {
+        padding: 0px;
+        display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 
-    .promo__item img {
+    .services-group__item {
+        padding: 30px 20px;
+    }
+
+    .services-group__title {
+        font-size: 18px;
+        padding: 10px 0;
+
+    }
+
+    .services-group__text {
+        font-size: 16px;
+    }
+
+    .reviews__heading {
+        padding-bottom: 0px;
+        font-size: 24px;
+    }
+
+    .reviews__text {
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .promo__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo__item-img {
         width: 328px;
         height: 178px;
     }
 
-    .promo__item p {
+    .promo__text {
+        top: 20px;
         left: 10px;
-        right: 142px;
-        font-size: 18px;
+        right: 160px;
+        font-size: 16px;
         letter-spacing: normal;
-        line-height: normal;
+        line-height: 24px;
     }
 
-    .meeting {
+    .meeting__content {
         padding: 0;
         flex-direction: column-reverse;
         justify-content: center;
+        gap: 30px;
     }
 
     .meeting-img img {
         width: 328px;
         height: 218px;
     }
+
+    .meeting__description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .meeting__heading {
+        font-size: 24px;
+    }
+
+    .meeting__text {
+        font-size: 16px;
+    }
+
     .blog-box {
         grid-template-columns: 1fr;
     }
+
     .blog__heading {
         font-size: 24px;
     }
+
     .blog-box__title {
         font-size: 20px;
     }
+
     .blog-box__text {
         font-size: 16px;
     }
+
     .blog-box__short-text {
         font-size: 18px;
     }
+
+    .sign-up__title {
+        font-size: 18px;
+    }
+
+    .sign-up__heading {
+        font-size: 24px;
+    }
+
+    .sign-up__form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .sign-up__form input {
+        width: 328px;
+        height: 48px;
+        border-radius: 40px;
+    }
+
+    .sign-up__form input[type="email"] {
+        font-size: 18px;
+    }
+
+    .sign-up__form input[type="submit"] {
+        font-size: 18px;
+    }
+
+    /* events */
+    .banner-events__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-events__text {
+        height: auto;
+    }
+
+    .banner-events__heading {
+        font-size: 24px;
+    }
+
+    .banner-events__title {
+        font-size: 18px;
+    }
+
+    .process__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .process__elem {
+        gap: 20px;
+    }
+
+    .process__text {
+        font-size: 18px;
+        line-height: 30px
+    }
+
+    .calendar__content {
+        gap: 30px;
+    }
+
+    .calendar__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .calendar-date {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendar-date__day {
+        font-size: 64px;
+    }
+
+    .calendar-date__month {
+        font-size: 32px;
+    }
+
+    .calendar__event {
+        gap: 16px;
+    }
+
+    .calendar__heading {
+        font-size: 24px;
+    }
+
+    .calendar__title {
+        font-size: 18px;
+    }
+
+    .calendar__description {
+        font-size: 16px;
+    }
+
+    .get-in-touch__content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .get-in-touch__info {
+        margin-bottom: 40px;
+    }
+
+    .get-in-touch__field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* recipes */
+    .banner-recipes__content {
+        padding: 0px;
+
+    }
+
+    .banner-recipes__heading {
+        font-size: 24px;
+    }
+
+    .banner-recipes__text {
+        font-size: 18px;
+    }
+
+    .books__heading {
+        font-size: 24px;
+    }
+
+    .books__text {
+        padding: 0px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .books-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .books-grid__box-img::after {
+        font-size: 24px;
+    }
+
+    .books-grid__title {
+        font-size: 20px;
+    }
+
+    .books-grid__price {
+        font-size: 24px;
+    }
+
+    .books-grid__modal-box {
+        max-width: 328px;
+        padding: 10px;
+        border-radius: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .books-grid__modal-title {
+        font-size: 20px;
+    }
+
+    .books-grid__modal-price {
+        font-size: 24px;
+    }
+
+    .books-grid__modal-text {
+        font-size: 16px;
+    }
+
+    .recipes-form__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipes-form__img {
+        max-width: 328px;
+    }
+
+    .recipes-form__heading {
+        font-size: 24px;
+    }
+
+    .recipes-form__box input[type="email"] {
+        width: 328px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+
+    .recipes-form__box input[type="submit"] {
+        width: 328px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+
+    .recipes__heading {
+        grid-column: span 2;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .recipes__text {
+        grid-column: span 2;
+        font-size: 18px;
+    }
+
+    .recipes__link {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column: span 2;
+    }
+
+    .recipes-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .recipes-box__item-img {
+        max-width: 328px;
+    }
+
+    .recipes-box__title {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .recipes-box__details {
+        padding: 0px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 16px;
+        font-size: 14px;
+    }
+
+    .recipes-hero__content {
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .recipes-hero__image {
+        max-width: 328px;
+        border-radius: 328px;
+    }
+
+    .recipes-hero__heading {
+        font-size: 24px;
+    }
+
+    .recipes-hero__title {
+        font-size: 18px;
+    }
+
+    .recipes-hero__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .recipes-hero__socials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* course */
+
+    .banner-course__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .banner-course__timer-item {
+        font-size: 42px;
+    }
+
+    .banner-course__box {
+        gap: 0px;
+    }
+
+    .banner-course__box-item {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .banner-course__heading {
+        font-size: 24px;
+    }
+
+    .banner-course__text {
+        font-size: 16px;
+    }
+
+    .banner-course__title {
+        font-size: 18px;
+    }
+
+    .banner-course__img {
+        max-width: 328px;
+    }
+
+    .course-hero__content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .course-hero__description {
+        max-width: 328px;
+    }
+
+    .course-hero__heading {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .course-hero__list-item {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .course-hero__text {
+        margin-bottom: 20px;
+        max-width: 328x;
+        font-size: 16px;
+    }
+
+    .course-hero__img:nth-child(1) {
+        max-width: 328px;
+        border-radius: 328px;
+    }
+
+    .course-hero__img:nth-child(2) {
+        display: none;
+    }
+
+    .course-hero__img:nth-child(3) {
+        display: none;
+    }
+
+    .course-hero__img:nth-child(4) {
+        display: none;
+    }
+
+    .edu-format__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .edu-format__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .edu-format__list-item {
+        padding: 20px 10px;
+        gap: 16px;
+    }
+
+    .edu-format__subject {
+        font-size: 16px;
+    }
+
+    .edu-format__title {
+        font-size: 24px;
+    }
+
+    .edu-format__price {
+        font-size: 32px;
+    }
+
+    .edu-format__price--disabled {
+        font-size: 28px;
+    }
+
+    .list__item {
+        font-size: 16px;
+    }
+
+    .edu-format__list-features {
+        gap: 14px;
+    }
+
+    .tick,
+    .cross {
+        padding-left: 24px;
+        background-size: 16px;
+    }
+
+    .course-results__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .course-results__img img {
+        max-width: 328px;
+    }
+
+    .course-results__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .course-results__heading {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .course-results__text {
+        font-size: 16px;
+    }
+
+    .course-results__list {
+        margin-bottom: 20px;
+        gap: 14px;
+    }
+
+    .course-results__list-item {
+        background-size: 1rem 1rem;
+        font-size: 16px;
+    }
+
+    .basic-lessons__heading {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .basic-lessons__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .basic-lessons__list-item {
+        position: relative;
+        padding: 60px 10px 20px 10px;
+        border-radius: 40px;
+    }
+
+    .basic-lessons__category {
+        padding: 14px 32px;
+        border-radius: 40px 0px;
+        font-size: 18px;
+    }
+
+    .basic-lessons__title {
+        font-size: 18px;
+    }
+
+    .basic-lessons__text {
+        font-size: 16px;
+    }
+
+    .faq__headline {
+        max-width: 328px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: var(--color-grey) 1px solid;
+    }
+
+    .faq-accordion__title {
+        font-size: 18px;
+    }
+
+    .faq-accordion__content {
+        font-size: 16px;
+    }
+
+    /* consultation */
+
+    .consultation-info__content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .consultation-info__block {
+        gap: 20px;
+    }
+
+    .consultation-info__heading {
+        font-size: 24px;
+    }
+
+    .consultation-info__text {
+        font-size: 16px;
+    }
+
+    .consultation-info__cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation-info__card {
+        margin: 3px 6px;
+    }
+
+    .consultation-info__title {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .effects__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .effects__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 16px;
+    }
+
+    .effects__list-item {
+        padding-left: 1.5rem;
+        background-size: 1.2rem 1.2rem;
+        font-size: 16px;
+    }
+
+    .consultation-price__heading {
+        font-size: 24px;
+    }
+
+    .consultation-price__text {
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .consultation-price__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .consultation-price__card {
+        padding: 20px 30px;
+        gap: 10px;
+    }
+
+    .consultation-price__title {
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+
+    .consultation-price__subtitle {
+        font-size: 32px;
+    }
+
+    .action__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .action__text {
+        padding-bottom: var(--padding-bottom--small);
+        font-size: 18px;
+    }
+
+    .action-tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .action-tab__arrow {
+        display: none;
+    }
+
+    .tablinks {
+        padding: 20px 0px;
+    }
+
+    .action-tab__content {
+        margin-top: 30px;
+        padding: 30px 10px;
+        background-color: var(--color-bg);
+    }
+
+    .action-tab__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .action-tab__box {
+        max-width: 300px;
+    }
+
+    .action-tab__category {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .action-tab__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .action-tab__btn-img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .action-tab__btn-text {
+        padding-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .action-tab__list {
+        gap: 10px;
+    }
+
+    .action-tab__list-item,
+    .action-tab__text {
+        font-size: 16px;
+    }
+
+    .faq__box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .faq__heading {
+        font-size: 24px;
+    }
+
+    .faq__box img {
+        width: 200px;
+    }
+
+    .module__content {
+        align-items: center;
+    }
+
+    .module__text {
+        text-align: center;
+    }
+
+    .module__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* about me */
+    .about__block {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .about__picture img {
+        width: 328px;
+    }
+
+    .about__title {
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .about__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .about__text,
+    .intro__text {
+        padding-bottom: 10px;
+        font-family: 16px;
+    }
+
+    .about-clients {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .about-clients__text {
+        font-size: 18px;
+    }
+
+    .about-clients__text--accent {
+        font-size: 18px;
+    }
+
+    .about__block:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro__heading {
+        font-size: 24px;
+    }
+
+    .nutriciolog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nutriciolog img {
+        width: 328px;
+    }
+
+    .nutriciolog__heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .nutriciolog__text {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .edu__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .edu-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .edu-info__item {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
 }

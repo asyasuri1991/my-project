@@ -51,11 +51,11 @@
                 <div class="page-header__menu-wrapper">
                     <nav class="page-header__nav">
                         <ul class="page-header__menu">
-                            <li><a href="about_me.html">Обо мне</a></li>
-                            <li><a href="consultation.html">Консультация</a></li>
-                            <li><a href="course.html">Курс</a></li>
-                            <li><a href="recipes.html">Рецепты</a></li>
-                            <li><a href="events.html">Афиша</a></li>
+                            <li><a href="about_me.html" class="page-header__menu-item">Обо мне</a></li>
+                            <li><a href="consultation.html" class="page-header__menu-item">Консультация</a></li>
+                            <li><a href="course.html" class="page-header__menu-item">Курс</a></li>
+                            <li><a href="recipes.html" class="page-header__menu-item">Рецепты</a></li>
+                            <li><a href="events.html" class="page-header__menu-item">Афиша</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -73,10 +73,26 @@
                             «САМ СЕБЕ НУТРИЦИОЛОГ»</h1>
                         <p class="banner-course__text">Авторский от 6 до 12 недель онлайн-курс от нутрициолога и коуча
                             по здоровому образу жизни Марии Смирновой.</p>
-                        <span class="banner-course__title">Старт 10 потока 26 февраля</span>
+                        <p class="banner-course__title">Старт 10 потока 26 февраля</p>
+                        <div class="banner-course__countdown">
+                            <div class="banner-course__timer">
+                                <span class="banner-course__timer-item" id="days">00</span>
+                                <span class="banner-course__timer-item" id="hours">00</span>
+                                <span class="banner-course__timer-item" id="minutes">00</span>
+                                <span class="banner-course__timer-item" id="seconds">00</span>
+                            </div>
+                            <div class="banner-course__box">
+                                <span class="banner-course__box-item">Дни</span>
+                                <span class="banner-course__box-item">Часы</span>
+                                <span class="banner-course__box-item">Минуты</span>
+                                <span class="banner-course__box-item">Секунды</span>
+                            </div>
+                        </div>
                         <a href="#!" class="btn btn--primary">Узнать подробности</a>
                     </div>
-                    <img src="./images/course/banner-course.jpg" alt="девушка">
+                    <div>
+                    <img class="banner-course__img" src="./images/course/banner-course.jpg" alt="девушка">
+                </div>
                 </div>
             </div>
         </section>
@@ -89,8 +105,8 @@
                     <div class="course-hero__images">
                         <img class="course-hero__img" src="./images/course/about-me1.jpg" alt="девушка наливает смузи">
                         <img class="course-hero__img" src="./images/course/about-me2.jpg" alt="девушка улыбается">
-                        <img src="./images/course/logo-color-accent.svg" alt="лепестки лого">
-                        <img src="./images/course/logo-color-brand.svg" alt="лепестки лого">
+                        <img  class="course-hero__img" src="./images/course/logo-color-accent.svg" alt="лепестки лого">
+                        <img  class="course-hero__img" src="./images/course/logo-color-brand.svg" alt="лепестки лого">
                     </div>
                     <div class="course-hero__description">
                         <h2 class="course-hero__heading">Меня зовут Смирнова Мария</h2>
@@ -406,6 +422,7 @@
         <!-- END faq -->
     </main>
     <script src="./js/header.js"></script>
+    <script src="./js/timer.js"></script>
     <script src="./js/accordion.js"></script>
 </body>
 
