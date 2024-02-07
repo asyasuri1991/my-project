@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <header class="page-header">
         <div class="container">
@@ -51,11 +52,11 @@
                 <div class="page-header__menu-wrapper">
                     <nav class="page-header__nav">
                         <ul class="page-header__menu">
-                            <li><a href="about_me.html">Обо мне</a></li>
-                            <li><a href="consultation.html">Консультация</a></li>
-                            <li><a href="course.html">Курс</a></li>
-                            <li><a href="recipes.html">Рецепты</a></li>
-                            <li><a href="events.html">Афиша</a></li>
+                            <li><a href="about_me.html" class="page-header__menu-item">Обо мне</a></li>
+                            <li><a href="consultation.html" class="page-header__menu-item">Консультация</a></li>
+                            <li><a href="course.html" class="page-header__menu-item">Курс</a></li>
+                            <li><a href="recipes.html" class="page-header__menu-item">Рецепты</a></li>
+                            <li><a href="events.html" class="page-header__menu-item">Афиша</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -66,18 +67,23 @@
     <main>
         <section class="questionnaire page-section page-section--bg">
             <div class="container">
-                <form action="">
+                <form action="" class="questionnaire__form form-fade">
                     <fieldset>
-                        <legend>Анкета для консультации нутрициолога</legend>
-                        <div class="questionnaire__form">
-                            <div class="questionnaire__form-box">
-                                <label for="">Ваш пол</label>
+                        <legend class="questionnaire__heading">Анкета для консультации нутрициолога</legend>
+                        <div class="questionnaire__form-inner">
+                            <div class="questionnaire__form-box radiobox">
+
+                                <p class="questionnaire__title">Ваш пол</p>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Мужчина</span>
+                                <label for="gender">
+                                    <input type="radio" name="gender" id="" class="radiobox-custom">
+                                    <span class="radiobox__text">Мужчина</span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Женщина</span>
+                                <label for="gender">
+                                    <input type="radio" name="gender" id="" class="radiobox-custom">
+                                    <span class="radiobox__text">Женщина</span>
+                                </label>
                             </div>
                             <div class="questionnaire__form-box">
                                 <input type="text" placeholder="Имя">
@@ -90,6 +96,9 @@
                             </div>
                             <div class="questionnaire__form-box">
                                 <input type="text" placeholder="Ваша почта">
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <input type="text" placeholder="Возраст">
                             </div>
                             <div class="questionnaire__form-box">
                                 <input type="text" placeholder="Ваш рост">
@@ -113,164 +122,159 @@
                                 <input type="text" placeholder="Объем бедер, см">
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Группа крови">
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Занимаетесь ли Вы спортом? Каким и как часто?"></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Занимаетесь ли Вы спортом? Каким и как часто?"></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <label for="">Сколько часов вы спите в будни?</label>
+                                <label for="sleep" class="questionnaire__title">Сколько часов вы спите в будни?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="sleep" id="">
                                 <span>6-8 часов</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="sleep" id="">
                                 <span>Меньше 6 часов</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="sleep" id="">
                                 <span>8 и более часов</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="sleep" id="">
                                 <span>Нет режима сна, есть бессонница и частые пробеждения</span>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Для чего Вам нужна консультация нутрициолога? Что Вы хотите скорректировать?"></textarea>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Для чего Вам нужна консультация нутрициолога? Что Вы хотите скорректировать?"></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Сколько в день обычно у Вас приемов пищи?"></textarea>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Сколько в день обычно у Вас приемов пищи?"></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Кратко опишите Ваш ежедневный рацион, начиная с завтрака."></textarea>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Кратко опишите Ваш ежедневный рацион, начиная с завтрака."></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Принимаете ли Вы витамины или БАД? Какие? В какой дозировке?"></textarea>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Принимаете ли Вы витамины или БАД? Какие? В какой дозировке?"></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Есть ли у Вас аллергия?"></textarea>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас аллергия?"></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Придерживаетесь ли вы какой-либо системы питания?</label>
+                                <label for="diet" class="questionnaire__title">Придерживаетесь ли вы какой-либо системы
+                                    питания?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="diet" id="">
                                 <span>Да, вегетарианство</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="diet" id="">
                                 <span>Да, веганство</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="diet" id="">
                                 <span>Да, другое</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="diet" id="">
                                 <span>Нет</span>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Употребляете ли вы алкоголь?</label>
+                                <label for="alco" class="questionnaire__title">Употребляете ли вы алкоголь?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="alco" id="">
                                 <span>Да, 3-4 раза в неделю</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="alco" id="">
                                 <span>Да, 1-2 раза в неделю</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="alco" id="">
                                 <span>Нет, только по праздникам</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="alco" id="">
                                 <span>Не употребляю совсем</span>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Есть ли у вас зависимость от кофе/кофеина?</label>
+                                <label for="coffee" class="questionnaire__title">Есть ли у вас зависимость от
+                                    кофе/кофеина?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="coffee" id="">
                                 <span>Да, жить не могу без кофе</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="coffee" id="">
                                 <span>не знаю, выпиваю 1-2 чашки кофе или чая</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="coffee" id="">
                                 <span>Нет</span>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Курите ли вы?</label>
+                                <label for="smoking" class="questionnaire__title">Курите ли вы?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="smoking" id="">
                                 <span>Да</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="smoking" id="">
                                 <span>Нет</span>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Регулярный ли у вас стул?</label>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас хронические заболевания?"></textarea>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас налет на языке? Опишите."></textarea>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас проявления на коже? Дерматит, псориаз, акне, зуд и т.д.?"></textarea>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <label for="pressure" class="questionnaire__title">Страдаете ли вы пониженным/повышенным
+                                    давлением?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Да</span>
-                                <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Нет</span>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Есть ли у Вас хронические заболевания?"></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Есть ли у Вас диабет 1 или 2 типа?"></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Есть ли у Вас налет на языке? Опишите."></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Есть ли у Вас проявления на коже? Дерматит, псориаз, акне, зуд и т.д.?"></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <label for="">Страдаете ли вы пониженным/повышенным давлением?</label>
-                                <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="pressure" id="">
                                 <span>Да, повышенное</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="pressure" id="">
                                 <span>Да, пониженное</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="pressure" id="">
                                 <span>Нет</span>
-                                <input type="checkbox" name="" id="">
+                                <input type="radio" name="pressure" id="">
                                 <span>Да, пониженное , часто падаю в обмороки</span>
                                 <br>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Есть ли у вас зависимость от кофе/кофеина?</label>
+                                <label for="stress" class="questionnaire__title">Под конец дня вы полны энергии?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Да, жить не могу без кофе</span>
+                                <input type="radio" name="stress" id="">
+                                <span>Да</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>не знаю, выпиваю 1-2 чашки кофе или чая</span>
+                                <input type="radio" name="stress" id="">
+                                <span>Нет, доползти бы до кровати</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Нет</span>
+                                <input type="radio" name="stress" id="">
+                                <span>Чаще да, чем нет</span>
+                                <br>
+                                <input type="radio" name="stress" id="">
+                                <span>Чаще нет, чем да</span>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="">Есть ли у вас зависимость от кофе/кофеина?</label>
+                                <label for="client" class="questionnaire__title">Откуда вы обо мне узнали?</label>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Да, жить не могу без кофе</span>
+                                <input type="radio" name="client" id="">
+                                <span>Instagram</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>не знаю, выпиваю 1-2 чашки кофе или чая</span>
+                                <input type="radio" name="client" id="">
+                                <span>VKontakte</span>
                                 <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Нет</span>
+                                <input type="radio" name="client" id="">
+                                <span>Google</span>
+                                <br>
+                                <input type="radio" name="client" id="">
+                                <span>Yandex</span>
+                                <br>
+                                <input type="radio" name="client" id="">
+                                <span>Рекомендация знакомых</span>
                             </div>
-                            <div class="questionnaire__form-box">
-                                <label for="">Есть ли у вас зависимость от кофе/кофеина?</label>
-                                <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Да, жить не могу без кофе</span>
-                                <br>
-                                <input type="checkbox" name="" id="">
-                                <span>не знаю, выпиваю 1-2 чашки кофе или чая</span>
-                                <br>
-                                <input type="checkbox" name="" id="">
-                                <span>Нет</span>
-                            </div>
+                            <button type="submit" class="btn btn--primary questionnaire__btn">Отправить</button>
                         </div>
                     </fieldset>
                 </form>

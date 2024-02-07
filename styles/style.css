@@ -2514,17 +2514,53 @@ h5 {
 
 /* анкета */
 .questionnaire__form {
-    padding: 60px;
-    /* display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questionnaire__heading {
+    padding-bottom: var(--padding-bottom);
+    text-align: center;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-heading--large);
+}
+
+.questionnaire__form-inner {
+    padding: 60px 100px;
+    display: grid;
     grid-template-columns: repeat(2, 400px);
-    gap: 20px; */
+    gap: 20px;
     background-color: var(--color-white);
 }
 
+.questionnaire__form-box input[type="text"],
+.questionnaire__form-box textarea {
+    width: 400px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: var(--border-radius--small);
+    background-color: var(--color-bg);
+}
+
 .questionnaire__form-box:nth-child(2),
-.questionnaire__form:nth-child(3),
-.questionnaire__form:nth-child(4),
-.questionnaire__form:nth-child(5) {
+.questionnaire__form-box:nth-child(3),
+.questionnaire__form-box:nth-child(4),
+.questionnaire__form-box:nth-child(5) {
+    grid-column-start: 1;
+    grid-column: span 2;
     width: 800px;
-    grid-column: span2;
+}
+
+.questionnaire__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.questionnaire__btn {
+    border: none;
+    outline: none;
+    width: 280px;
+    height: 60px;
 }
