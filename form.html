@@ -77,207 +77,267 @@
                             <div class="questionnaire__form-box radiobox">
 
                                 <p class="questionnaire__title">Ваш пол</p>
-                                <br>
-                                <label for="male">
-                                    <input type="radio" name="gender" id="male" class="radiobox-custom">
+
+                                <label for="male" class="questionnaire__label">
+                                    <input type="radio" name="gender" id="male" class="radiobox-custom" required>
                                     <span class="radiobox__text">Мужчина</span>
                                 </label>
                                 <br>
-                                <label for="female">
+                                <label for="female" class="questionnaire__label">
                                     <input type="radio" name="gender" id="female" class="radiobox-custom">
                                     <span class="radiobox__text">Женщина</span>
                                 </label>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Имя">
+                                <input type="text" placeholder="Имя" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Фамилия">
+                                <input type="text" placeholder="Фамилия" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Телефон">
+                                <input type="text" placeholder="Телефон" required> 
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Ваша почта">
+                                <input type="text" placeholder="Ваша почта" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Возраст">
+                                <input type="text" placeholder="Возраст" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Ваш рост">
+                                <input type="text" placeholder="Ваш рост" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Ваш текущий вес">
+                                <input type="text" placeholder="Ваш текущий вес" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Желаемый вес">
+                                <input type="text" placeholder="Желаемый вес" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Объем шеи, см">
+                                <input type="text" placeholder="Объем шеи, см" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Объем груди, см">
+                                <input type="text" placeholder="Объем груди, см" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Объем талии, см">
+                                <input type="text" placeholder="Объем талии, см" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <input type="text" placeholder="Объем бедер, см">
+                                <input type="text" placeholder="Объем бедер, см" required>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Занимаетесь ли Вы спортом? Каким и как часто?"></textarea>
+                                <textarea name="sport" minlength="3" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Занимаетесь ли Вы спортом? Каким и как часто?" required></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="sleep" class="questionnaire__title">Сколько часов вы спите в будни?</label>
-                                <br>
-                                <label for="sleep1">
-                                    <input type="radio" name="sleep" id="sleep1">
-                                    <span>6-8 часов</span>
+                                <p for="pressure" class="questionnaire__title">Страдаете ли вы пониженным/повышенным
+                                    давлением?</p>
+
+                                <label for="pressure1" class="questionnaire__label">
+                                    <input type="radio" name="pressure" id="pressure1" required>
+                                    <span class="radiobox__text">Да, повышенное</span>
                                 </label>
                                 <br>
-                                <input type="radio" name="sleep" id="">
-                                <span>Меньше 6 часов</span>
+                                <label for="pressure2" class="questionnaire__label">
+                                    <input type="radio" name="pressure" id="pressure2">
+                                    <span class="radiobox__text">Да, пониженное</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="sleep" id="">
-                                <span>8 и более часов</span>
+                                <label for="pressure3" class="questionnaire__label">
+                                    <input type="radio" name="pressure" id="pressure3">
+                                    <span class="radiobox__text">Нет</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="sleep" id="">
-                                <span>Нет режима сна, есть бессонница и частые пробеждения</span>
+                                <label for="pressure4" class="questionnaire__label">
+                                    <input type="radio" name="pressure" id="pressure4">
+                                    <span class="radiobox__text">Да, пониженное , часто падаю в обмороки</span>
+                                </label>
+                                <br>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <p class="questionnaire__title">Сколько часов вы спите в будни?</p>
+
+                                <label for="sleep1" class="questionnaire__label" >
+                                    <input type="radio" name="sleep" id="sleep1" required>
+                                    <span class="radiobox__text">6-8 часов</span>
+                                </label>
+                                <br>
+                                <label for="sleep2" class="questionnaire__label">
+                                    <input type="radio" name="sleep" id="sleep2">
+                                    <span class="radiobox__text">Меньше 6 часов</span>
+                                </label>
+                                <br>
+                                <label for="sleep3" class="questionnaire__label">
+                                    <input type="radio" name="sleep" id="sleep3">
+                                    <span class="radiobox__text">8 и более часов</span>
+                                </label>
+                                <br>
+                                <label for="sleep4" class="questionnaire__label">
+                                    <input type="radio" name="sleep" id="sleep4">
+                                    <span class="radiobox__text">Нет режима сна, есть бессонница и частые
+                                        пробеждения</span>
+                                </label>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <textarea name="problem" minlength="3" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Для чего Вам нужна консультация нутрициолога? Что Вы хотите скорректировать?" required></textarea>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <textarea name="meals-quantity" minlength="1" maxlength="20" id="" cols="30" rows="10"
+                                    placeholder="Сколько в день обычно у Вас приемов пищи?" required></textarea>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <textarea name="everyday-diet" minlength="3" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Кратко опишите Ваш ежедневный рацион, начиная с завтрака." required></textarea>
+                            </div>
+                            <div class="questionnaire__form-box">
+                                <textarea name="supplements" minlength="2" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Принимаете ли Вы витамины или БАД? Какие? В какой дозировке?" required></textarea>
                             </div>
                             <div class="questionnaire__form-box">
                                 <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Для чего Вам нужна консультация нутрициолога? Что Вы хотите скорректировать?"></textarea>
+                                    placeholder="Есть ли у Вас аллергия?" required></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Сколько в день обычно у Вас приемов пищи?"></textarea>
+                                <p class="questionnaire__title">Употребляете ли вы алкоголь?</p>
+
+                                <label for="alco1" class="questionnaire__label">
+                                    <input type="radio" name="alco" id="alco1" required>
+                                    <span class="radiobox__text"> Да, 3-4 раза в неделю</span>
+                                </label>
+                                <br>
+                                <label for="alco2" class="questionnaire__label">
+                                    <input type="radio" name="alco" id="alco2">
+                                    <span class="radiobox__text">Да, 1-2 раза в неделю</span>
+                                </label>
+                                <br>
+                                <label for="alco3" class="questionnaire__label">
+                                    <input type="radio" name="alco" id="alco3">
+                                    <span class="radiobox__text">Нет, только по праздникам</span>
+                                </label>
+                                <br>
+                                <label for="alco4" class="questionnaire__label">
+                                    <input type="radio" name="alco" id="alco4">
+                                    <span class="radiobox__text">Не употребляю совсем</span>
+                                </label>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Кратко опишите Ваш ежедневный рацион, начиная с завтрака."></textarea>
+                                <p class="questionnaire__title">Придерживаетесь ли вы какой-либо системы
+                                    питания?</p>
+
+                                <label for="diet1" class="questionnaire__label">
+                                    <input type="radio" name="diet" id="diet1" required>
+                                    <span class="radiobox__text">Да, вегетарианство</span>
+                                </label>
+                                <br>
+                                <label for="diet2" class="questionnaire__label">
+                                    <input type="radio" name="diet" id="diet2">
+                                    <span class="radiobox__text">Да, веганство</span>
+                                </label>
+                                <br>
+                                <label for="diet3" class="questionnaire__label">
+                                    <input type="radio" name="diet" id="diet3">
+                                    <span class="radiobox__text">Да, другое</span>
+                                </label>
+                                <br>
+                                <label for="diet4" class="questionnaire__label">
+                                    <input type="radio" name="diet" id="diet4">
+                                    <span class="radiobox__text">Нет</span>
+                                </label>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Принимаете ли Вы витамины или БАД? Какие? В какой дозировке?"></textarea>
+                                <p class="questionnaire__title">Есть ли у вас зависимость от
+                                    кофе/кофеина?</p>
+
+                                <label for="coffee1" class="questionnaire__label">
+                                    <input type="radio" name="coffee" id="coffee1" required>
+                                    <span class="radiobox__text">Да, жить не могу без кофе</span>
+                                </label>
+                                <br>
+                                <label for="coffee2" class="questionnaire__label">
+                                    <input type="radio" name="coffee" id="coffee2">
+                                    <span class="radiobox__text">Не знаю, выпиваю 1-2 чашки кофе или чая</span>
+                                </label>
+                                <br>
+                                <label for="coffee3" class="questionnaire__label">
+                                    <input type="radio" name="coffee" id="coffee3">
+                                    <span class="radiobox__text">Нет</span>
+                                </label>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Есть ли у Вас аллергия?"></textarea>
+                                <p class="questionnaire__title">Курите ли вы?</p>
+
+                                <label for="smoking1" class="questionnaire__label">
+                                    <input type="radio" name="smoking" id="smoking1" required>
+                                    <span class="radiobox__text">Да</span>
+                                </label>
+                                <br>
+                                <label for="smoking2" class="questionnaire__label">
+                                    <input type="radio" name="smoking" id="smoking2">
+                                    <span class="radiobox__text">Нет</span>
+                                </label>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="diet" class="questionnaire__title">Придерживаетесь ли вы какой-либо системы
-                                    питания?</label>
-                                <br>
-                                <input type="radio" name="diet" id="">
-                                <span>Да, вегетарианство</span>
-                                <br>
-                                <input type="radio" name="diet" id="">
-                                <span>Да, веганство</span>
-                                <br>
-                                <input type="radio" name="diet" id="">
-                                <span>Да, другое</span>
-                                <br>
-                                <input type="radio" name="diet" id="">
-                                <span>Нет</span>
+                                <textarea name="illness" minlength="2" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас хронические заболевания?" required></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="alco" class="questionnaire__title">Употребляете ли вы алкоголь?</label>
-                                <br>
-                                <input type="radio" name="alco" id="">
-                                <span>Да, 3-4 раза в неделю</span>
-                                <br>
-                                <input type="radio" name="alco" id="">
-                                <span>Да, 1-2 раза в неделю</span>
-                                <br>
-                                <input type="radio" name="alco" id="">
-                                <span>Нет, только по праздникам</span>
-                                <br>
-                                <input type="radio" name="alco" id="">
-                                <span>Не употребляю совсем</span>
+                                <textarea name="tongue" minlength="2" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас налет на языке? Опишите." required></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="coffee" class="questionnaire__title">Есть ли у вас зависимость от
-                                    кофе/кофеина?</label>
-                                <br>
-                                <input type="radio" name="coffee" id="">
-                                <span>Да, жить не могу без кофе</span>
-                                <br>
-                                <input type="radio" name="coffee" id="">
-                                <span>не знаю, выпиваю 1-2 чашки кофе или чая</span>
-                                <br>
-                                <input type="radio" name="coffee" id="">
-                                <span>Нет</span>
+                                <textarea name="skin" minlength="2" maxlength="100" id="" cols="30" rows="10"
+                                    placeholder="Есть ли у Вас проявления на коже? Дерматит, псориаз, акне, зуд и т.д.?" required></textarea>
                             </div>
                             <div class="questionnaire__form-box">
-                                <label for="smoking" class="questionnaire__title">Курите ли вы?</label>
+                                <p class="questionnaire__title">Под конец дня вы полны энергии?</p>
+
+                                <label for="stress1" class="questionnaire__label">
+                                    <input type="radio" name="stress" id="stress1" required>
+                                    <span class="radiobox__text">Да</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="smoking" id="">
-                                <span>Да</span>
+                                <label for="stress2" class="questionnaire__label">
+                                    <input type="radio" name="stress" id="stress2">
+                                    <span class="radiobox__text">Нет, доползти бы до кровати</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="smoking" id="">
-                                <span>Нет</span>
+                                <label for="stress3" class="questionnaire__label">
+                                    <input type="radio" name="stress" id="stress3">
+                                    <span class="radiobox__text">Чаще да, чем нет</span>
+                                </label>
+                                <br>
+                                <label for="stress4" class="questionnaire__label">
+                                    <input type="radio" name="stress" id="stress4">
+                                    <span class="radiobox__text">Чаще нет, чем да</span>
+                                </label>
                             </div>
                             <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Есть ли у Вас хронические заболевания?"></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Есть ли у Вас налет на языке? Опишите."></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <textarea name="" id="" cols="30" rows="10"
-                                    placeholder="Есть ли у Вас проявления на коже? Дерматит, псориаз, акне, зуд и т.д.?"></textarea>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <label for="pressure" class="questionnaire__title">Страдаете ли вы пониженным/повышенным
-                                    давлением?</label>
+                                <p class="questionnaire__title">Откуда вы обо мне узнали?</p>
+
+                                <label for="client1" class="questionnaire__label">
+                                    <input type="radio" name="client" id="client1" required>
+                                    <span class="radiobox__text">Instagram</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="pressure" id="">
-                                <span>Да, повышенное</span>
+                                <label for="client2" class="questionnaire__label">
+                                    <input type="radio" name="client" id="client2">
+                                    <span class="radiobox__text">VKontakte</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="pressure" id="">
-                                <span>Да, пониженное</span>
+                                <label for="client3" class="questionnaire__label">
+                                    <input type="radio" name="client" id="client3">
+                                    <span class="radiobox__text">Google</span>
+                                </label>
                                 <br>
-                                <input type="radio" name="pressure" id="">
-                                <span>Нет</span>
-                                <input type="radio" name="pressure" id="">
-                                <span>Да, пониженное , часто падаю в обмороки</span>
+                                <label for="client4" class="questionnaire__label">
+                                    <input type="radio" name="client" id="client4">
+                                    <span class="radiobox__text">Yandex</span>
+                                </label>
                                 <br>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <label for="stress" class="questionnaire__title">Под конец дня вы полны энергии?</label>
-                                <br>
-                                <input type="radio" name="stress" id="">
-                                <span>Да</span>
-                                <br>
-                                <input type="radio" name="stress" id="">
-                                <span>Нет, доползти бы до кровати</span>
-                                <br>
-                                <input type="radio" name="stress" id="">
-                                <span>Чаще да, чем нет</span>
-                                <br>
-                                <input type="radio" name="stress" id="">
-                                <span>Чаще нет, чем да</span>
-                            </div>
-                            <div class="questionnaire__form-box">
-                                <label for="client" class="questionnaire__title">Откуда вы обо мне узнали?</label>
-                                <br>
-                                <input type="radio" name="client" id="">
-                                <span>Instagram</span>
-                                <br>
-                                <input type="radio" name="client" id="">
-                                <span>VKontakte</span>
-                                <br>
-                                <input type="radio" name="client" id="">
-                                <span>Google</span>
-                                <br>
-                                <input type="radio" name="client" id="">
-                                <span>Yandex</span>
-                                <br>
-                                <input type="radio" name="client" id="">
-                                <span>Рекомендация знакомых</span>
+                                <label for="client5" class="questionnaire__label">
+                                    <input type="radio" name="client" id="client5">
+                                    <span class="radiobox__text">Рекомендация знакомых</span>
+                                </label>
                             </div>
                             <button type="submit" class="btn btn--primary questionnaire__btn">Отправить</button>
                         </div>

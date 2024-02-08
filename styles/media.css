@@ -254,8 +254,7 @@
     }
 
     .meeting-img img {
-        width: 328px;
-        height: 218px;
+        width: 100%;
     }
 
     .meeting__description {
@@ -285,26 +284,28 @@
         max-width: 576px;
         padding: 0 15px;
     }
-/* header */
 
-.page-header__menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 320px;
-    padding: 107px 0 0 15px;
-    border-right: 0 0 16px 16px;
-    background-color: #fff;
-    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
-    overflow-y: auto;
-    z-index: 9;
-    opacity: 0;
-    visibility: hidden;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease;
-}
+    /* header */
+
+    .page-header__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 320px;
+        padding: 107px 0 0 15px;
+        border-right: 0 0 16px 16px;
+        background-color: #fff;
+        box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+        overflow-y: auto;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+    }
+
     /* footer */
     .page-footer__row {
         display: flex;
@@ -363,7 +364,7 @@
     }
 
     .hero__img {
-        width: 100%;
+        width: fit-content;
     }
 
     .hero__img img {
@@ -582,12 +583,13 @@
     .calendar__item {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
     .calendar-date {
-        width: 300px;
+        width: 100%;
         height: auto;
         padding: 10px;
         display: flex;
@@ -600,6 +602,10 @@
 
     .calendar-date__month {
         font-size: 32px;
+    }
+
+    .calendar-poster {
+        width: 100%;
     }
 
     .calendar__event {
@@ -702,7 +708,7 @@
     }
 
     .recipes-form__img {
-        max-width: 328px;
+        width: 100%;
     }
 
     .recipes-form__heading {
@@ -710,13 +716,13 @@
     }
 
     .recipes-form__box input[type="email"] {
-        width: 328px;
+        width: 320px;
         border-radius: 40px;
         font-size: 16px;
     }
 
     .recipes-form__box input[type="submit"] {
-        width: 328px;
+        width: 320px;
         border-radius: 40px;
         font-size: 16px;
     }
@@ -747,7 +753,7 @@
     }
 
     .recipes-box__item-img {
-        max-width: 328px;
+        width: 100%;
     }
 
     .recipes-box__title {
@@ -775,8 +781,8 @@
     }
 
     .recipes-hero__image {
-        max-width: 328px;
-        border-radius: 328px;
+        width: 100%;
+        border-radius: 50%;
     }
 
     .recipes-hero__heading {
@@ -797,6 +803,9 @@
         flex-direction: column;
     }
 
+    .recipes-hero__socials-icon{
+        display: none;
+    }
     /* course */
 
     .banner-course__content {
@@ -833,7 +842,7 @@
     }
 
     .banner-course__img {
-        max-width: 328px;
+        width: 100%;
     }
 
     .course-hero__content {
@@ -843,7 +852,7 @@
     }
 
     .course-hero__description {
-        max-width: 328px;
+        width: 100%;
     }
 
     .course-hero__heading {
@@ -863,8 +872,8 @@
     }
 
     .course-hero__img:nth-child(1) {
-        max-width: 328px;
-        border-radius: 328px;
+        width: 100%;
+        border-radius: 50%;
     }
 
     .course-hero__img:nth-child(2) {
@@ -936,7 +945,7 @@
     }
 
     .course-results__img img {
-        max-width: 328px;
+        width: 100%;
     }
 
     .course-results__block {
@@ -1044,6 +1053,93 @@
     .consultation-info__title {
         padding-bottom: 20px;
         font-size: 20px;
+    }
+
+    .symptoms__content {
+        padding-bottom: var(--padding-bottom);
+        margin-bottom: 100px;
+    }
+
+    .symptoms__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .symptoms__text {
+        font-size: 16px;
+    }
+
+    .circle__title {
+        font-size: 18px;
+    }
+
+    .circle__text {
+        font-size: 16px;
+    }
+
+    .central-figure {
+        display: none;
+    }
+
+    .symptom-circle__container {
+        width: 100%;
+        border-radius: 0px;
+        padding: 20px;
+        position: initial;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: var(--color-bg);
+    }
+
+    .circle-item {
+        position: initial;
+        margin: 0 auto;
+        width:100%;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .circle-item.top {
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .circle-item.right-top {
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .circle-item.right-bottom {
+        bottom: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .circle-item.bottom {
+        bottom: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .circle-item.left-bottom {
+        bottom: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .circle-item.left-top {
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
     }
 
     .effects__heading {
@@ -1205,8 +1301,8 @@
         gap: 40px;
     }
 
-    .about__picture img {
-        width: 328px;
+    .about__picture img{
+        width: 100%;
     }
 
     .about__title {
@@ -1262,7 +1358,7 @@
     }
 
     .nutriciolog img {
-        width: 328px;
+        width: 100%;
     }
 
     .nutriciolog__heading {
@@ -1289,10 +1385,6 @@
     .edu-info__item {
         padding-bottom: 10px;
         font-size: 16px;
-    }
-
-    .symptoms {
-        display: none;
     }
 
 }
