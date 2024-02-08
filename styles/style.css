@@ -91,7 +91,7 @@ fieldset {
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .list-reset {
@@ -283,10 +283,6 @@ input::placeholder {
     justify-content: space-between; */
 }
 
-.page-header__toggle-menu {
-    display: none;
-}
-
 .logo {
     display: flex;
     justify-content: space-between;
@@ -302,6 +298,65 @@ input::placeholder {
 
 .page-header__nav {
     flex-grow: 1;
+}
+
+.nav__burger {
+    display: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.burger,
+.burger::after,
+.burger::before {
+    height: 3px;
+    width: 30px;
+    background-color: var(--color-grey);
+    border-radius: var(--border-radius--small);
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.burger {
+    margin: 10px 0px;
+    padding: 0;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.burger::before {
+    content: "";
+    position: relative;
+    top: -10px;
+}
+
+.burger::after {
+    content: "";
+    position: relative;
+    top: 7px;
+}
+
+.nav__burger:hover .burger,
+.nav__burger:hover .burger::after,
+.nav__burger:hover .burger::before {
+    background-color: var(--color-brand);
+}
+
+.nav__burger.active .burger {
+    background-color: transparent;
+}
+
+.nav__burger.active .burger::before {
+    transform-origin: top left;
+    transform: rotate(45deg);
+}
+
+.nav__burger.active .burger::after {
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
 }
 
 .page-header__menu {
@@ -678,8 +733,8 @@ input::placeholder {
 }
 
 .promo__content {
-  --gap:40px;
-  --promo-elements: 2;
+    --gap: 40px;
+    --promo-elements: 2;
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
@@ -768,7 +823,7 @@ input::placeholder {
 }
 
 .meeting__description {
-  padding: 40px;
+    padding: 40px;
 }
 
 .blog__content {
@@ -1349,7 +1404,7 @@ h5 {
 }
 
 .symptoms__text {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .circle-item {
@@ -2562,12 +2617,9 @@ h5 {
     background-color: var(--color-bg);
 }
 
-.questionnaire__form-box:nth-child(2),
-.questionnaire__form-box:nth-child(3),
-.questionnaire__form-box:nth-child(4),
-.questionnaire__form-box:nth-child(5) {
+.questionnaire__form-box:nth-child(n+2):nth-child(-n+5) {
     grid-column-start: 1;
-    grid-column: span 2;
+    grid-column-end: 3;
     width: 800px;
 }
 
