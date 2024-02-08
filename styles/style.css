@@ -58,6 +58,7 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
 .page-section--bg {
@@ -87,6 +88,10 @@ fieldset {
 * p {
     margin: 0;
     padding: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .list-reset {
@@ -427,7 +432,6 @@ input::placeholder {
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
-    gap: 20px;
     background-color: var(--color-white);
     border-radius: var(--border-radius--small) 0px 0px var(--border-radius--small);
 }
@@ -454,6 +458,7 @@ input::placeholder {
     color: var(--color-grey);
     font-weight: 600;
     line-height: 150%;
+    font-size: 16px;
 }
 
 .offers__heading {
@@ -673,13 +678,17 @@ input::placeholder {
 }
 
 .promo__content {
+  --gap:40px;
+  --promo-elements: 2;
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: var(--gap);
 }
 
 .promo__item {
     position: relative;
     transition: 0.5s ease;
+    width: calc((100% - (var(--promo-elements) - 1) * var(--gap)) / (var(--promo-elements)));
 }
 
 .promo__item::after {
@@ -700,7 +709,7 @@ input::placeholder {
     position: absolute;
     top: 40px;
     left: 40px;
-    right: 300px;
+    max-width: 250px;
     z-index: 1;
     font-family: var(--font-family-heading);
     font-size: 22px;
@@ -718,7 +727,6 @@ input::placeholder {
 }
 
 .meeting__content {
-    padding: var(--padding-bottom) var(--padding-bottom) 0 0;
     background-color: var(--color-bg);
     border-radius: var(--border-radius--small) var(--border-radius--small) 0 0;
     display: flex;
@@ -730,6 +738,8 @@ input::placeholder {
 .meeting-img {
     position: relative;
 }
+
+
 
 .meeting-img__text {
     position: absolute;
@@ -755,6 +765,10 @@ input::placeholder {
     padding-bottom: var(--padding-bottom);
     line-height: 30px;
     color: var(--color-grey);
+}
+
+.meeting__description {
+  padding: 40px;
 }
 
 .blog__content {
