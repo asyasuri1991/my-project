@@ -1279,4 +1279,8 @@
     font-size: 16px;
   }
 
+  .symptoms {
+    display: none;
+  }
+
 }

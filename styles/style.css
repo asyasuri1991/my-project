@@ -1348,6 +1348,10 @@ h5 {
     margin: 0 auto;
 }
 
+.symptoms__text {
+  margin-bottom: 60px;
+}
+
 .circle-item {
     position: absolute;
     margin: 0 auto;
