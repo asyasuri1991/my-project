@@ -2232,7 +2232,7 @@ input::placeholder {
 .recipes-hero__heading {
     margin-bottom: 30px;
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-heading--large);
+    font-size: var(--font-size-heading--medium);
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
@@ -2243,7 +2243,7 @@ input::placeholder {
     margin-bottom: 20px;
     color: var(--color-brand);
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-heading--medium);
+    font-size: var(--font-size-heading--small);
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
