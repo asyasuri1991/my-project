@@ -549,19 +549,9 @@
         padding: 60px 40px;
         grid-template-columns: repeat(2, 300px);
     }
-}
-
-@media screen and (width < 768px) {
-    .container {
-        padding: 0 30px;
-    }
-
-    .btn {
-        font-size: 16px;
-    }
-
-    .services-group {
-        padding: 0;
+    
+    .meeting-img img {
+        width: 100%;
     }
 
     .meeting__content {
@@ -571,10 +561,6 @@
         gap: 30px;
     }
 
-    .meeting-img img {
-        width: 100%;
-    }
-
     .meeting__description {
         padding: 20px;
         display: flex;
@@ -582,40 +568,8 @@
         align-items: center;
         text-align: center;
     }
-
-    .meeting__heading {
-        font-size: 24px;
-    }
-
-    .meeting__text {
-        font-size: 16px;
-    }
-
-    .hero-info__heading {
-        font-size: 36px;
-    }
-
-    .symptoms__content {
-        padding-bottom: var(--padding-bottom);
-        margin-bottom: 100px;
-    }
-
-    .symptoms__heading {
-        padding-bottom: 20px;
-        font-size: 24px;
-    }
-
-    .symptoms__text {
-        font-size: 16px;
-    }
-
-    .circle__title {
-        font-size: 18px;
-    }
-
-    .circle__text {
-        font-size: 16px;
-    }
+}
+@media screen and (width < 830px) {
 
     .central-figure {
         display: none;
@@ -680,6 +634,54 @@
         left: auto;
         transform: none;
         text-align: left;
+    }
+
+}
+@media screen and (width < 768px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .services-group {
+        padding: 0;
+    }
+
+    .meeting__heading {
+        font-size: 24px;
+    }
+
+    .meeting__text {
+        font-size: 16px;
+    }
+
+    .hero-info__heading {
+        font-size: 36px;
+    }
+
+    .symptoms__content {
+        padding-bottom: var(--padding-bottom);
+        margin-bottom: 100px;
+    }
+
+    .symptoms__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .symptoms__text {
+        font-size: 16px;
+    }
+
+    .circle__title {
+        font-size: 18px;
+    }
+
+    .circle__text {
+        font-size: 16px;
     }
 
     .books-grid {
