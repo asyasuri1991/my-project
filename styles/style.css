@@ -1586,6 +1586,12 @@ input::placeholder {
     letter-spacing: 3%;
 }
 
+.consultation-price__currency {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-heading--small);
+    color: var(--color-grey);
+    opacity: 50%;
+}
 .action__heading {
     margin: 0;
     padding-bottom: var(--padding-bottom);
@@ -2481,6 +2487,13 @@ input::placeholder {
     color: var(--color-accent);
 }
 
+.edu-format__price-currency {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-heading--small);
+    color: var(--color-grey);
+    opacity: 60%;
+    text-decoration: none;
+}
 .edu-format__price--disabled {
     text-decoration: line-through;
     font-family: var(--font-family-heading);

@@ -1247,6 +1247,9 @@
         font-size: 32px;
     }
 
+    .edu-format__price-currency {
+        font-size: 18px;
+    }
     .edu-format__price--disabled {
         font-size: 28px;
     }
@@ -1381,7 +1384,9 @@
     .consultation-price__subtitle {
         font-size: 32px;
     }
-
+    .consultation-price__currency {
+        font-size: 18px;
+    }
     .action__heading {
         padding-bottom: 20px;
         font-size: 24px;
