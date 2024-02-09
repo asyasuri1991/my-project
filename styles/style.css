@@ -2527,9 +2527,10 @@ input::placeholder {
 }
 
 .edu-format__price--disabled {
-    text-decoration: line-through;
+    text-decoration: line-through  2px solid;
+    text-underline-offset: 20px;
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-heading--large);
+    font-size: var(--font-size-heading--medium);
     font-weight: 400;
     color: var(--color-grey);
     opacity: 50%;

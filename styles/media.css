@@ -312,6 +312,11 @@
         width: 250px;
     }
 
+    .symptoms__content {
+        padding-bottom: 20px;
+        margin-bottom: 0px;
+    }
+
     .symptom-circle__container {
         width: 580px;
         height: 500px;
@@ -1348,6 +1353,8 @@
     }
 
     .symptom-circle__container {
+        max-width: none;
+        height:fit-content;
         display: flex;
         flex-direction: column;
         gap: 20px;
