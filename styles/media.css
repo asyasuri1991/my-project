@@ -159,7 +159,6 @@
 
     .hero-panel {
         display: none;
-        ;
     }
 }
 
@@ -203,7 +202,6 @@
         justify-content: flex-end;
     }
 
-
     .offers-features {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -214,13 +212,8 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .promo__content {
-        --promo-elements: 1;
-        justify-content: center;
-    }
-
-    .promo__item-img {
-        width: 100%;
+    .promo {
+        display: none;
     }
 
     .blog-box {
@@ -228,12 +221,334 @@
     }
 
     .page-footer__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+
+    .page-footer__box {
+        order: 3;
+    }
+
+    .about__block {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .about__picture img {
+        width: 100%;
+    }
+
+    .about-clients {
+        display: flex;
         flex-direction: column;
+        gap: 5px;
+    }
+
+    .about__block:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .nutriciolog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nutriciolog img {
+        width: 100%;
+    }
+
+    .edu-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .get-in-touch__content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .get-in-touch__info {
+        margin-bottom: 40px;
+    }
+
+    .get-in-touch__field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-events__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-events__text {
+        height: auto;
+    }
+
+    .consultation-info__cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .circle__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .circle__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .circle-item {
+        width: 250px;
+    }
+
+    .symptom-circle__container {
+        width: 580px;
+        height: 500px;
+    }
+
+    .central-figure {
+        width: 50%;
+    }
+
+    .action-tab {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .action-tab__arrow {
+        display: none;
+    }
+
+    .action-tab__content {
+        margin-top: 30px;
+        background-color: var(--color-bg);
+    }
+
+    .action-tab__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .action-tab__box {
+        max-width: 300px;
+    }
+
+    .consultation-info__content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .consultation-info__block {
+        gap: 20px;
+    }
+
+    .recipes-hero__content {
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 40px;
     }
 
+    .recipes-hero__image {
+        width: 100%;
+        border-radius: 50%;
+    }
 
+    .recipes-hero__socials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipes-hero__socials-icon {
+        display: none;
+    }
+
+    .consultation-price__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .faq__box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .module__content {
+        align-items: center;
+    }
+
+    .module__text {
+        text-align: center;
+    }
+
+    .module__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .process__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .calendar__content {
+        gap: 30px;
+    }
+
+    .calendar__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .calendar-date {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendar-poster {
+        width: 100%;
+    }
+
+    .books-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recipes-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recipes-box__item-img {
+        width: 100%;
+    }
+
+    .banner-recipes__content {
+        padding: 0px;
+    }
+
+    .books__heading {
+        font-size: 36px;
+    }
+
+    .books__text {
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    .banner-course__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .banner-course__img {
+        width: 100%;
+    }
+
+    .course-hero__description {
+        width: 100%;
+    }
+
+    .course-hero__content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .course-hero__img:nth-child(2) {
+        display: none;
+    }
+
+    .edu-format__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .course-results__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .course-results__img img {
+        width: 100%;
+    }
+
+    .course-results__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .basic-lessons__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .basic-lessons__list-item {
+        position: relative;
+        padding: 60px 10px 20px 10px;
+        border-radius: 40px;
+    }
+
+    .basic-lessons__category {
+        padding: 14px 32px;
+        border-radius: 40px 0px;
+        font-size: 18px;
+    }
+
+    .scroll-up__img {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+        border-radius: 40px;
+    }
+
+    .questionnaire__form-inner {
+        padding: 60px 40px;
+        grid-template-columns: repeat(2, 300px);
+    }
 }
 
 @media screen and (width < 768px) {
@@ -279,6 +594,201 @@
     .hero-info__heading {
         font-size: 36px;
     }
+
+    .symptoms__content {
+        padding-bottom: var(--padding-bottom);
+        margin-bottom: 100px;
+    }
+
+    .symptoms__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .symptoms__text {
+        font-size: 16px;
+    }
+
+    .circle__title {
+        font-size: 18px;
+    }
+
+    .circle__text {
+        font-size: 16px;
+    }
+
+    .central-figure {
+        display: none;
+    }
+
+    .symptom-circle__container {
+        width: 100%;
+        border-radius: 0px;
+        padding: 20px;
+        position: initial;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: var(--color-bg);
+    }
+
+    .circle-item {
+        position: initial;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0px;
+        text-align: left;
+    }
+
+    .circle-item.top {
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .circle-item.right-top {
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .circle-item.right-bottom {
+        bottom: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .circle-item.bottom {
+        bottom: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .circle-item.left-bottom {
+        bottom: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .circle-item.left-top {
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: left;
+    }
+
+    .books-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .recipes-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .recipes-box__item-img {
+        width: 100%;
+    }
+
+    .recipes-form__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipes-form__img {
+        width: 100%;
+    }
+
+    .recipes__link {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column: span 2;
+    }
+
+    .banner-course__timer-item {
+        font-size: 42px;
+    }
+
+    .banner-course__box {
+        gap: 0px;
+    }
+
+    .banner-course__box-item {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .banner-course__heading {
+        font-size: 24px;
+    }
+
+    .banner-course__text {
+        font-size: 16px;
+    }
+
+    .banner-course__title {
+        font-size: 18px;
+    }
+
+    .edu-format__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .basic-lessons__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .basic-lessons__list-item {
+        position: relative;
+        padding: 60px 10px 20px 10px;
+        border-radius: 40px;
+    }
+
+    .basic-lessons__category {
+        padding: 14px 32px;
+        border-radius: 40px 0px;
+        font-size: 18px;
+    }
+
+    .page-footer__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .scroll-up__img {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 30px;
+    }
+
+    .questionnaire__form-inner {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media screen and (width < 576px) {
@@ -310,13 +820,7 @@
     }
 
     /* footer */
-    .page-footer__row {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 30px;
-    }
+
 
     .page-footer__box {
         gap: 16px;
@@ -471,7 +975,6 @@
     .services-group__title {
         font-size: 18px;
         padding: 10px 0;
-
     }
 
     .services-group__text {
@@ -486,10 +989,6 @@
     .reviews__text {
         padding-bottom: 20px;
         font-size: 16px;
-    }
-
-    .promo {
-        display: none;
     }
 
     .blog-box {
@@ -541,15 +1040,6 @@
     }
 
     /* events */
-    .banner-events__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banner-events__text {
-        height: auto;
-    }
 
     .banner-events__heading {
         font-size: 24px;
@@ -557,13 +1047,6 @@
 
     .banner-events__title {
         font-size: 18px;
-    }
-
-    .process__content {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
     }
 
     .process__elem {
@@ -575,36 +1058,12 @@
         line-height: 30px
     }
 
-    .calendar__content {
-        gap: 30px;
-    }
-
-    .calendar__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .calendar-date {
-        width: 100%;
-        height: auto;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
     .calendar-date__day {
         font-size: 64px;
     }
 
     .calendar-date__month {
         font-size: 32px;
-    }
-
-    .calendar-poster {
-        width: 100%;
     }
 
     .calendar__event {
@@ -623,25 +1082,7 @@
         font-size: 16px;
     }
 
-    .get-in-touch__content {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .get-in-touch__info {
-        margin-bottom: 40px;
-    }
-
-    .get-in-touch__field {
-        display: flex;
-        flex-direction: column;
-    }
-
     /* recipes */
-    .banner-recipes__content {
-        padding: 0px;
-
-    }
 
     .banner-recipes__heading {
         font-size: 24px;
@@ -656,15 +1097,7 @@
     }
 
     .books__text {
-        padding: 0px;
-        margin-bottom: 30px;
         font-size: 16px;
-    }
-
-    .books-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
     }
 
     .books-grid__box-img::after {
@@ -704,17 +1137,6 @@
         font-size: 16px;
     }
 
-    .recipes-form__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .recipes-form__img {
-        width: 100%;
-    }
-
     .recipes-form__heading {
         font-size: 24px;
     }
@@ -742,24 +1164,6 @@
         font-size: 18px;
     }
 
-    .recipes__link {
-        grid-row-start: 3;
-        grid-column-start: 1;
-        grid-column: span 2;
-    }
-
-    .recipes-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .recipes-box__item-img {
-        width: 100%;
-    }
-
     .recipes-box__title {
         margin-bottom: 20px;
         font-size: 18px;
@@ -775,20 +1179,6 @@
         font-size: 14px;
     }
 
-    .recipes-hero__content {
-        padding: 0 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .recipes-hero__image {
-        width: 100%;
-        border-radius: 50%;
-    }
-
     .recipes-hero__heading {
         font-size: 24px;
     }
@@ -802,63 +1192,7 @@
         font-size: 16px;
     }
 
-    .recipes-hero__socials {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .recipes-hero__socials-icon {
-        display: none;
-    }
-
     /* course */
-
-    .banner-course__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .banner-course__timer-item {
-        font-size: 42px;
-    }
-
-    .banner-course__box {
-        gap: 0px;
-    }
-
-    .banner-course__box-item {
-        width: 80px;
-        font-size: 16px;
-    }
-
-    .banner-course__heading {
-        font-size: 24px;
-    }
-
-    .banner-course__text {
-        font-size: 16px;
-    }
-
-    .banner-course__title {
-        font-size: 18px;
-    }
-
-    .banner-course__img {
-        width: 100%;
-    }
-
-    .course-hero__content {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 30px;
-    }
-
-    .course-hero__description {
-        width: 100%;
-    }
 
     .course-hero__heading {
         margin-bottom: 20px;
@@ -881,10 +1215,6 @@
         border-radius: 50%;
     }
 
-    .course-hero__img:nth-child(2) {
-        display: none;
-    }
-
     .course-hero__img:nth-child(3) {
         display: none;
     }
@@ -896,14 +1226,6 @@
     .edu-format__heading {
         padding-bottom: 20px;
         font-size: 24px;
-    }
-
-    .edu-format__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
     }
 
     .edu-format__list-item {
@@ -941,25 +1263,6 @@
         background-size: 16px;
     }
 
-    .course-results__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .course-results__img img {
-        width: 100%;
-    }
-
-    .course-results__block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .course-results__heading {
         margin-bottom: 20px;
         font-size: 24px;
@@ -984,24 +1287,6 @@
         font-size: 24px;
     }
 
-    .basic-lessons__list {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .basic-lessons__list-item {
-        position: relative;
-        padding: 60px 10px 20px 10px;
-        border-radius: 40px;
-    }
-
-    .basic-lessons__category {
-        padding: 14px 32px;
-        border-radius: 40px 0px;
-        font-size: 18px;
-    }
-
     .basic-lessons__title {
         font-size: 18px;
     }
@@ -1011,7 +1296,7 @@
     }
 
     .faq__headline {
-        max-width: 328px;
+        max-width: 100%;
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: var(--color-grey) 1px solid;
@@ -1026,16 +1311,6 @@
     }
 
     /* consultation */
-
-    .consultation-info__content {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 30px;
-    }
-
-    .consultation-info__block {
-        gap: 20px;
-    }
 
     .consultation-info__heading {
         font-size: 24px;
@@ -1052,99 +1327,16 @@
     }
 
     .consultation-info__card {
+        width: 100%;
+    }
+
+    .consultation-info__card {
         margin: 3px 6px;
     }
 
     .consultation-info__title {
         padding-bottom: 20px;
         font-size: 20px;
-    }
-
-    .symptoms__content {
-        padding-bottom: var(--padding-bottom);
-        margin-bottom: 100px;
-    }
-
-    .symptoms__heading {
-        padding-bottom: 20px;
-        font-size: 24px;
-    }
-
-    .symptoms__text {
-        font-size: 16px;
-    }
-
-    .circle__title {
-        font-size: 18px;
-    }
-
-    .circle__text {
-        font-size: 16px;
-    }
-
-    .central-figure {
-        display: none;
-    }
-
-    .symptom-circle__container {
-        width: 100%;
-        border-radius: 0px;
-        padding: 20px;
-        position: initial;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        align-items: flex-start;
-        justify-content: flex-start;
-        background-color: var(--color-bg);
-    }
-
-    .circle-item {
-        position: initial;
-        margin: 0 auto;
-        width: 100%;
-        padding: 0px;
-        text-align: left;
-    }
-
-    .circle-item.top {
-        top: auto;
-        left: auto;
-        transform: none;
-        text-align: left;
-    }
-
-    .circle-item.right-top {
-        top: auto;
-        right: auto;
-        transform: none;
-    }
-
-    .circle-item.right-bottom {
-        bottom: auto;
-        right: auto;
-        transform: none;
-    }
-
-    .circle-item.bottom {
-        bottom: auto;
-        left: auto;
-        transform: none;
-        text-align: left;
-    }
-
-    .circle-item.left-bottom {
-        bottom: auto;
-        left: auto;
-        transform: none;
-        text-align: left;
-    }
-
-    .circle-item.left-top {
-        top: auto;
-        left: auto;
-        transform: none;
-        text-align: left;
     }
 
     .effects__heading {
@@ -1172,14 +1364,6 @@
     .consultation-price__text {
         padding-bottom: 20px;
         font-size: 18px;
-    }
-
-    .consultation-price__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
     }
 
     .consultation-price__card {
@@ -1212,30 +1396,8 @@
         justify-content: center;
     }
 
-    .action-tab__arrow {
-        display: none;
-    }
-
     .tablinks {
         padding: 20px 0px;
-    }
-
-    .action-tab__content {
-        margin-top: 30px;
-        background-color: var(--color-bg);
-    }
-
-    .action-tab__inner {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .action-tab__box {
-        max-width: 300px;
     }
 
     .action-tab__category {
@@ -1268,12 +1430,6 @@
         font-size: 16px;
     }
 
-    .faq__box {
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
-
     .faq__heading {
         font-size: 24px;
     }
@@ -1282,31 +1438,40 @@
         width: 200px;
     }
 
-    .module__content {
-        align-items: center;
+    /* about me */
+
+    .nutriciolog__heading {
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
-    .module__text {
-        text-align: center;
+    .nutriciolog__text {
+        font-size: 16px;
+        padding-bottom: 20px;
     }
 
-    .module__buttons {
+    .edu__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .intro {
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
-    /* about me */
-    .about__block {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 40px;
+    .intro__heading {
+        font-size: 24px;
     }
 
-    .about__picture img {
-        width: 100%;
+    .edu__heading {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .edu-info__item {
+        padding-bottom: 10px;
+        font-size: 16px;
     }
 
     .about__title {
@@ -1326,12 +1491,6 @@
         font-family: 16px;
     }
 
-    .about-clients {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
     .about-clients__text {
         font-size: 18px;
     }
@@ -1340,55 +1499,25 @@
         font-size: 18px;
     }
 
-    .about__block:nth-child(2) {
-        flex-direction: column;
-    }
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .intro__heading {
-        font-size: 24px;
-    }
-
-    .nutriciolog {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .nutriciolog img {
-        width: 100%;
-    }
-
-    .nutriciolog__heading {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .nutriciolog__text {
-        font-size: 16px;
-        padding-bottom: 20px;
-    }
-
-    .edu__heading {
+    /* questionnaire */
+    .questionnaire__heading {
         padding-bottom: 20px;
         font-size: 24px;
     }
 
-    .edu-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .questionnaire__form-box input[type="text"],
+    .questionnaire__form-box textarea {
+        padding: 10px;
+        border-radius: var(--border-radius--tiny);
     }
 
-    .edu-info__item {
+    .questionnaire__title {
         padding-bottom: 10px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
+    .radiobox__text {
+        font-size: 14px;
+        line-height: 32px;
+    }
 }

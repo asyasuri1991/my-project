@@ -307,7 +307,7 @@ input::placeholder {
 
 .logo {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 10px;
     text-decoration: none;
@@ -1893,7 +1893,7 @@ input::placeholder {
     font-size: var(--font-size-heading--large);
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 32px;
     text-transform: uppercase;
 }
 
@@ -2183,6 +2183,8 @@ input::placeholder {
 }
 
 .recipes-box__item {
+    text-decoration: none;
+    color: inherit;
     border-radius: var(--border-radius--small);
     border: 1px solid var(--color-border);
     background-color: var(--color-white);
