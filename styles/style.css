@@ -816,7 +816,7 @@ input::placeholder {
     position: absolute;
     top: 40px;
     left: 40px;
-    max-width: 250px;
+    width: 280px;
     z-index: 1;
     font-family: var(--font-family-heading);
     font-size: 22px;
@@ -827,10 +827,6 @@ input::placeholder {
 
 .promo__link {
     color: inherit;
-}
-
-.promo__text--white {
-    color: var(--color-white);
 }
 
 .meeting__content {
