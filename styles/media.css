@@ -212,9 +212,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .promo {
+    /* .promo {
         display: none;
-    }
+    } */
+    /* .promo__content{
+        --promo-elements: 1;
+    } */
 
     .blog-box {
         grid-template-columns: repeat(2, 1fr);
@@ -577,6 +580,12 @@
 
 @media screen and (width < 830px) {
 
+    .promo__text {
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+    }
+
     .central-figure {
         display: none;
     }
@@ -655,6 +664,10 @@
 
     .services-group {
         padding: 0;
+    }
+
+    .promo__content{
+        --promo-elements: 1;
     }
 
     .meeting__heading {
@@ -999,7 +1012,10 @@
         padding-bottom: 20px;
         font-size: 16px;
     }
-
+    .promo__text {
+        width: 200px;
+        font-size: 16px;
+    }
     .blog-box {
         grid-template-columns: 1fr;
     }
