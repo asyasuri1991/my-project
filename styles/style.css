@@ -2494,11 +2494,12 @@ input::placeholder {
     opacity: 60%;
     text-decoration: none;
 }
+
 .edu-format__price--disabled {
     text-decoration: line-through;
     font-family: var(--font-family-heading);
     font-size: var(--font-size-heading--large);
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-grey);
     opacity: 50%;
 }

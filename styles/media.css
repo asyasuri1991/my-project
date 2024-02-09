@@ -569,6 +569,7 @@
         text-align: center;
     }
 }
+
 @media screen and (width < 830px) {
 
     .central-figure {
@@ -637,6 +638,7 @@
     }
 
 }
+
 @media screen and (width < 768px) {
     .container {
         padding: 0 30px;
@@ -1250,6 +1252,7 @@
     .edu-format__price-currency {
         font-size: 18px;
     }
+
     .edu-format__price--disabled {
         font-size: 28px;
     }
@@ -1346,9 +1349,10 @@
 
     .symptom-circle__container {
         display: flex;
-flex-direction: column;
-gap: 20px;
+        flex-direction: column;
+        gap: 20px;
     }
+
     .effects__heading {
         padding-bottom: 20px;
         font-size: 24px;
@@ -1389,9 +1393,11 @@ gap: 20px;
     .consultation-price__subtitle {
         font-size: 32px;
     }
+
     .consultation-price__currency {
         font-size: 18px;
     }
+
     .action__heading {
         padding-bottom: 20px;
         font-size: 24px;
