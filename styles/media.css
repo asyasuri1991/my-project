@@ -1344,6 +1344,11 @@
         font-size: 20px;
     }
 
+    .symptom-circle__container {
+        display: flex;
+flex-direction: column;
+gap: 20px;
+    }
     .effects__heading {
         padding-bottom: 20px;
         font-size: 24px;
