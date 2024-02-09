@@ -549,7 +549,7 @@
         padding: 60px 40px;
         grid-template-columns: repeat(2, 300px);
     }
-    
+
     .meeting-img img {
         width: 100%;
     }
@@ -585,7 +585,7 @@
         column-gap: 20px;
         align-items: flex-start;
         justify-content: flex-start;
-        background-color: var(--color-bg);
+        background-color: transparent;
     }
 
     .circle-item {
