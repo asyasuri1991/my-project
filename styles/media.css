@@ -157,7 +157,6 @@
         text-align: center;
     }
 
-
     .hero-panel {
         display: none;
         ;
@@ -240,6 +239,10 @@
 @media screen and (width < 768px) {
     .container {
         padding: 0 30px;
+    }
+
+    .btn {
+        font-size: 16px;
     }
 
     .services-group {
@@ -485,12 +488,8 @@
         font-size: 16px;
     }
 
-    .promo__text {
-        top: 20px;
-        left: 10px;
-        font-size: 16px;
-        letter-spacing: normal;
-        line-height: 24px;
+    .promo {
+        display: none;
     }
 
     .blog-box {
@@ -688,7 +687,12 @@
         gap: 20px;
     }
 
+    .books-grid__modal-img {
+        display: none;
+    }
+
     .books-grid__modal-title {
+        width: 200px;
         font-size: 20px;
     }
 
@@ -803,9 +807,10 @@
         flex-direction: column;
     }
 
-    .recipes-hero__socials-icon{
+    .recipes-hero__socials-icon {
         display: none;
     }
+
     /* course */
 
     .banner-course__content {
@@ -1097,7 +1102,7 @@
     .circle-item {
         position: initial;
         margin: 0 auto;
-        width:100%;
+        width: 100%;
         padding: 0px;
         text-align: left;
     }
@@ -1217,7 +1222,6 @@
 
     .action-tab__content {
         margin-top: 30px;
-        padding: 30px 10px;
         background-color: var(--color-bg);
     }
 
@@ -1301,7 +1305,7 @@
         gap: 40px;
     }
 
-    .about__picture img{
+    .about__picture img {
         width: 100%;
     }
 

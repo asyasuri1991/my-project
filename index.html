@@ -444,6 +444,7 @@
         <section class="promo page-section">
             <div class="container">
                 <div class="promo__content">
+                    <h2 class="promo__heading">Приглашаю вас на мои мероприятия!</h2>
                     <div class="promo__item">
                         <img class="promo__item-img" src="./images/promo-img1.jpg" alt="вкусная и здоровая еда">
                         <p class="promo__text promo__text--white">Приглашаю вас в мир здоровой и полезной еды. <a
@@ -476,7 +477,7 @@
                     <div class="meeting__description">
                         <h3 class="meeting__heading">Получить бесплатную 20-минутную онлайн встречу.</h3>
                         <p class="meeting__text">Познакомимся друг с другом, наметим план действий.</p>
-                        <a href="#!" class="btn btn--primary">Забронировать сейчас</a>
+                        <a href="mailto:msmirnova@mail.ru" class="btn btn--primary">Забронировать сейчас</a>
                     </div>
                 </div>
             </div>
@@ -491,8 +492,7 @@
                     <ul class="blog-box list-reset">
                         <li>
                             <a href="404.html" class="blog-box__item">
-                                <img class="blog-box__img" src="./images/blog-post1.jpg" alt="вкусная еда"
-                                    class="blog-box__img">
+                                <img class="blog-box__img" src="./images/blog-post1.jpg" alt="вкусная еда">
                                 <h3 class="blog-box__title">Растительный белок и польза вегетарианства для человека</h3>
                                 <p class="blog-box__text">Сегодня у нас интересная тема. Как обычно, мы будем говорить о
                                     разных темах, включая вегетарианство. Мы обсудим различные практические аспекты
@@ -540,8 +540,10 @@
                 <span class="sign-up__title">Подписаться</span>
                 <h2 class="sign-up__heading">Тематическая рассылка</h2>
                 <form class="sign-up__form form-fade">
-                        <input class="inputEmail" type="email" name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Электронный адрес" required>
-                        <input class="btn-submit" type="submit" value="Подписаться">
+                    <input class="inputEmail" type="email" name="email"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Электронный адрес"
+                        required>
+                    <input class="btn-submit" type="submit" value="Подписаться">
                 </form>
                 <!-- <div class="form-modal" id="form-modal">
                     <div class="form-modal__box">
@@ -558,6 +560,12 @@
         <!-- END Sign up Form -->
 
     </main>
+
+    <!-- scroll-up -->
+    <i class="scroll-up" id="#scroll-up">
+        <img class="scroll-up__img" src="./images/download-btn.svg" alt="стрелочка">
+    </i>
+    <!-- END scroll-up -->
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -616,16 +624,16 @@
                 </div>
                 <div class="page-footer__menu-wrapper">
                     <ul class="page-footer__menu list-reset">
-                        <h3 class="page-footer__menu-title">информация</h3>
+                        <li class="page-footer__menu-title">информация</li>
                         <li><a href="about_me.html" class="page-footer__menu-item">обо мне</a></li>
-                        <li><a href="" class="page-footer__menu-item">пользовательское соглашение</a></li>
-                        <li><a href="" class="page-footer__menu-item">персональные данные</a></li>
-                        <li><a href="" class="page-footer__menu-item">публичная оферта</a></li>
+                        <li><a href="404.html" class="page-footer__menu-item">пользовательское соглашение</a></li>
+                        <li><a href="404.html" class="page-footer__menu-item">персональные данные</a></li>
+                        <li><a href="404.html" class="page-footer__menu-item">публичная оферта</a></li>
                     </ul>
                 </div>
                 <div class="page-footer__menu-wrapper">
                     <ul class="page-footer__menu list-reset">
-                        <h3 class="page-footer__menu-title">услуги</h3>
+                        <li class="page-footer__menu-title">услуги</li>
                         <li><a href="consultation.html" class="page-footer__menu-item">индивидуальная консультация</a>
                         </li>
                         <li><a href="course.html" class="page-footer__menu-item">курс сам себе нутрициолог</a></li>
@@ -638,10 +646,13 @@
     </footer>
     <!-- END Footer -->
 
+    <script src="./js/scroll-up.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/reviews-slider.js"></script>
+    <!-- <script src="./js/form-validation.js"></script> -->
+
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./js/header.js"></script>
-<script src="./js/reviews-slider.js"></script>
-<!-- <script src="./js/form-validation.js"></script> -->
 
 </html>

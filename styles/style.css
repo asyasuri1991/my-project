@@ -210,6 +210,26 @@ input::placeholder {
     transition: opacity 0.3s ease;
 }
 
+/* button-up */
+
+.scroll-up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.scroll-up__img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--color-brand);
+    transform: rotate(180deg);
+    opacity: 60%;
+}
+
 /* button style */
 
 .btn-reset {
@@ -952,7 +972,7 @@ input::placeholder {
 .about__block {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
@@ -1061,9 +1081,11 @@ input::placeholder {
     align-items: center;
     gap: 80px;
 }
+
 .nutriciolog__img {
     width: 100%;
 }
+
 .nutriciolog__heading {
     color: var(--color-grey);
     font-family: var(--font-family-heading);
@@ -1255,9 +1277,10 @@ input::placeholder {
     line-height: normal;
 }
 
-.calendar-poster {
-    width: 100%;
+.calendar-poster img {
+    max-width: none;
 }
+
 .calendar__event {
     display: flex;
     flex-direction: column;
@@ -1387,12 +1410,14 @@ input::placeholder {
     padding-bottom: var(--padding-bottom);
     margin-bottom: 60px;
 }
+
 .symptoms__heading {
     padding-bottom: var(--padding-bottom);
     color: var(--color-grey);
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-heading--large);   
+    font-size: var(--font-size-heading--large);
 }
+
 .symptoms__text {
     font-size: 20px;
 }
@@ -1403,9 +1428,11 @@ input::placeholder {
     font-weight: 500;
     line-height: 30px;
 }
+
 .circle__text {
     line-height: 30px;
 }
+
 .symptom-circle__container {
     padding-bottom: var(--padding-bottom);
     position: relative;
@@ -1471,9 +1498,6 @@ input::placeholder {
     transform: translate(-50%, -50%);
     text-align: right;
 }
-
-/* .central-figure {
-    /* Стилизация для центрального элемента */
 
 .effects {
     background-color: var(--color-green);
@@ -2052,6 +2076,13 @@ input::placeholder {
     align-items: center;
 }
 
+.recipes-form__title,
+.process__heading,
+.calendar__top-heading,
+.promo__heading {
+    display: none;
+}
+
 .recipes-form__box {
     display: flex;
     flex-direction: column;
@@ -2147,7 +2178,7 @@ input::placeholder {
 
 .recipes-box {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -2246,9 +2277,11 @@ input::placeholder {
 .recipes-hero__box {
     align-items: center;
 }
-.recipes-hero__image{
+
+.recipes-hero__image {
     width: 100%;
 }
+
 /* ============================
  *  Page Course
  *  ===========================
@@ -2500,6 +2533,10 @@ input::placeholder {
     gap: 60px;
 }
 
+.course-results__img img {
+    max-width: none;
+}
+
 .course-results__block {
     display: flex;
     justify-content: space-between;
@@ -2635,7 +2672,7 @@ input::placeholder {
 
 .questionnaire__form-box input[type="text"],
 .questionnaire__form-box textarea {
-    width: 400px;
+    width: 100%;
     border: none;
     outline: none;
     padding: 20px;
@@ -2646,12 +2683,12 @@ input::placeholder {
 .questionnaire__form-box:nth-child(n+2):nth-child(-n+5) {
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 800px;
 }
 
-.questionnaire__form-box:nth-child(16){
+.questionnaire__form-box:nth-child(16) {
     grid-column: span 2;
 }
+
 .questionnaire__title {
     padding-bottom: 20px;
     font-size: 20px;
@@ -2660,8 +2697,9 @@ input::placeholder {
 
 .radiobox__text {
     font-size: 16px;
-   line-height: 32px;
+    line-height: 32px;
 }
+
 .questionnaire__btn {
     border: none;
     outline: none;
@@ -2674,17 +2712,17 @@ input::placeholder {
     position: absolute;
     z-index: -1;
     opacity: 0;
-  }
-  
-  /* для элемента label связанного с .custom-radio */
-  .questionnaire__label>span {
+}
+
+/* для элемента label связанного с .custom-radio */
+.questionnaire__label>span {
     display: inline-flex;
     align-items: center;
     user-select: none;
-  }
-  
-  /* создание в label псевдоэлемента  before со следующими стилями */
-  .questionnaire__label>span::before {
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.questionnaire__label>span::before {
     content: '';
     display: inline-block;
     width: 1em;
@@ -2697,32 +2735,32 @@ input::placeholder {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-  }
-  
-  /* стили при наведении курсора на радио */
-  .questionnaire__label>input:not(:disabled):not(:checked)+span:hover::before {
+}
+
+/* стили при наведении курсора на радио */
+.questionnaire__label>input:not(:disabled):not(:checked)+span:hover::before {
     border-color: var(--color-brand);
-  }
-  
-  /* стили для активной радиокнопки (при нажатии на неё) */
-  .questionnaire__label>input:not(:disabled):active+span::before {
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.questionnaire__label>input:not(:disabled):active+span::before {
     background-color: var(--color-bg-green);
     border-color: var(--color-border-green);
-  }
-   
-  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-  .questionnaire__label>input:focus:not(:checked)+span::before {
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.questionnaire__label>input:focus:not(:checked)+span::before {
     border-color: var(--color-accent);
-  }
-  
-  /* стили для радиокнопки, находящейся в состоянии checked */
-  .questionnaire__label>input:checked+span::before {
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.questionnaire__label>input:checked+span::before {
     border-color: var(--color-brand);
     background-color: transparent;
     background-image: url("../images/radio.svg");
-  }
+}
 
-  textarea{
-    outline : none;
-    resize : none;
-  }
+textarea {
+    outline: none;
+    resize: none;
+}
