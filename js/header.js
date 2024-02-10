@@ -8,7 +8,7 @@ window.addEventListener('scroll', function () {
 });
 
 const navList=document.querySelector('.page-header__menu');
-const burger = document.querySelector('.burger');
+const burger = document.querySelector('.nav__burger');
 burger.addEventListener('click', function(event){
     event.preventDefault();
     navList.classList.toggle('active');
