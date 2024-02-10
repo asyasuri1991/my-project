@@ -2523,7 +2523,7 @@ input::placeholder {
 }
 
 .edu-format__price--disabled {
-    text-decoration: line-through  2px solid;
+    text-decoration: line-through 2px solid;
     text-underline-offset: 20px;
     font-family: var(--font-family-heading);
     font-size: var(--font-size-heading--medium);
@@ -2807,4 +2807,15 @@ input::placeholder {
 textarea {
     outline: none;
     resize: none;
+}
+
+/* 404 */
+.error{
+    padding: 30px;
+}
+.error__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
