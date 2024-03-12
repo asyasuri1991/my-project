@@ -1,6 +1,6 @@
 function timer() {
     let days, hours, minutes, seconds;
-    let endDate = new Date("2024-02-26T00:00:00").getTime();
+    let endDate = new Date("2024-05-26T00:00:00").getTime();
     function calc() {
         let startDate = new Date().getTime();
         let timeLeft = parseInt((endDate - startDate) / 1000);
